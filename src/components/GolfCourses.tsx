@@ -1,0 +1,64 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useLanguage } from "./LanguageProvider";
+import { IMAGES } from "@/lib/images";
+
+const GOLF_IMAGES = [IMAGES.golf[0], IMAGES.golf[1], IMAGES.golf[2]];
+
+export default function GolfCourses() {
+  const { t } = useLanguage();
+  const g = t.golf;
+
+  return (
+    <section id="golf" className="border-t border-line bg-surface py-20">
+      <div className="mx-auto max-w-6xl px-6">
+        <p className="section-eyebrow">{g.eyebrow}</p>
+        <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
+          {g.title}
+        </h2>
+        <p className="mt-3 max-w-2xl text-ink-soft">{g.lead}</p>
+        <Link
+          href="/golf"
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brass hover:opacity-80"
+        >
+          {g.viewAllCta}
+          <span aria-hidden>→</span>
+        </Link>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {g.courses.map((c, i) => (
+            <article
+              key={c.name}
+              className="overflow-hidden rounded-2xl border border-line bg-background"
+            >
+              <div className="relative aspect-[3/2]">
+                <Image
+                  src={GOLF_IMAGES[i % GOLF_IMAGES.length]}
+                  alt={c.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+                <span className="absolute right-3 top-3 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white">
+                  {c.distance}
+                </span>
+              </div>
+              <div className="p-5">
+                <h3 className="font-display text-xl font-semibold text-fairway-2">
+                  {c.name}
+                </h3>
+                <p className="mt-2 text-sm text-ink-soft">{c.text}</p>
+                <span className="mt-3 inline-block rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
+                  {c.tag}
+                </span>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="mt-6 text-xs text-ink-soft">{g.note}</p>
+      </div>
+    </section>
+  );
+}
