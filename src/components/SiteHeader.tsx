@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "./LanguageProvider";
 
@@ -18,25 +19,22 @@ export default function SiteHeader() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-surface/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-header">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link href="/" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-full bg-fairway font-display text-lg text-white">
-            禅
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-lg text-fairway-2">
-              Zen Homestay
-            </span>
-            <span className="block text-[0.68rem] tracking-wide text-ink-soft">
-              Lâm Trường · Ba Vì
-            </span>
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="Zen Homestay Lâm Trường"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-full"
+          />
+       
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium text-ink-soft md:flex">
+        <nav className="hidden items-center gap-7 text-sm font-medium text-white/85 md:flex">
           {NAV_ITEMS.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-fairway-2">
+            <Link key={item.href} href={item.href} className="hover:text-white">
               {item.label}
             </Link>
           ))}
@@ -58,21 +56,21 @@ export default function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             className="flex flex-col gap-1.5 md:hidden"
           >
-            <span className="h-0.5 w-6 bg-ink" />
-            <span className="h-0.5 w-6 bg-ink" />
-            <span className="h-0.5 w-6 bg-ink" />
+            <span className="h-0.5 w-6 bg-white" />
+            <span className="h-0.5 w-6 bg-white" />
+            <span className="h-0.5 w-6 bg-white" />
           </button>
         </div>
       </div>
 
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-line bg-surface px-6 py-4 text-sm font-medium text-ink-soft md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-white/15 bg-header px-6 py-4 text-sm font-medium text-white/85 md:hidden">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="py-2"
+              className="py-2 hover:text-white"
             >
               {item.label}
             </Link>
@@ -101,14 +99,14 @@ function LanguageToggle({
     <div
       role="group"
       aria-label="Chọn ngôn ngữ / 언어 선택"
-      className="flex rounded-full border border-line bg-background p-0.5 text-xs font-semibold"
+      className="flex rounded-full border border-white/25 bg-white/10 p-0.5 text-xs font-semibold"
     >
       <button
         type="button"
         onClick={() => setLang("vi")}
         aria-pressed={lang === "vi"}
         className={`rounded-full px-3 py-1.5 transition ${
-          lang === "vi" ? "bg-fairway text-white" : "text-ink-soft hover:text-fairway-2"
+          lang === "vi" ? "bg-white text-header" : "text-white/70 hover:text-white"
         }`}
       >
         VI
@@ -118,7 +116,7 @@ function LanguageToggle({
         onClick={() => setLang("kr")}
         aria-pressed={lang === "kr"}
         className={`rounded-full px-3 py-1.5 transition ${
-          lang === "kr" ? "bg-fairway text-white" : "text-ink-soft hover:text-fairway-2"
+          lang === "kr" ? "bg-white text-header" : "text-white/70 hover:text-white"
         }`}
       >
         KR
