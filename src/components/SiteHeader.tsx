@@ -27,7 +27,7 @@ export default function SiteHeader() {
             alt="Zen Homestay Lâm Trường"
             width={40}
             height={40}
-            className="h-10 w-10 rounded-full"
+            className="h-15 w-16 rounded-full"
           />
        
         </Link>
