@@ -3,6 +3,7 @@ export type Lang = "vi" | "kr";
 export const translations = {
   vi: {
     nav: {
+      about: "Giới thiệu",
       destination: "Điểm đến",
       golf: "Sân golf",
       packages: "Gói dịch vụ",
@@ -19,8 +20,28 @@ export const translations = {
       ctaPrimary: "Nhận tư vấn miễn phí",
       ctaGhost: "Xem bản đồ sân golf",
     },
+    about: {
+      eyebrow: "01 · Về chúng tôi",
+      title: "Zen Homestay Lâm Trường — nghỉ dưỡng chậm rãi giữa thiên nhiên",
+      lead: "Ra đời từ tình yêu với thiên nhiên Ba Vì và golf, Zen Homestay Lâm Trường được xây dựng như một điểm dừng chân yên tĩnh, nơi mỗi hành trình chơi golf được trọn vẹn hơn nhờ những khoảng nghỉ chậm rãi trước và sau vòng đấu.",
+      values: [
+        {
+          label: "Sứ mệnh",
+          text: "Mang đến trải nghiệm nghỉ dưỡng tối giản, gần gũi thiên nhiên cho mỗi hành trình chơi golf tại Hà Nội.",
+        },
+        {
+          label: "Không gian",
+          text: "Kiến trúc lấy cảm hứng từ triết lý Thiền (Zen) Nhật Bản, hòa cùng rừng thông và đồi chè lâm trường Ba Vì.",
+        },
+        {
+          label: "Cam kết",
+          text: "Đội ngũ tận tâm, đồng hành từ lúc đặt phòng, đặt sân golf đến đưa đón trong suốt chuyến đi.",
+        },
+      ],
+      imageAlt: "Không gian nghỉ dưỡng của Zen Homestay Lâm Trường tại Ba Vì",
+    },
     destination: {
-      eyebrow: "01 · Điểm đến",
+      eyebrow: "02 · Điểm đến",
       title: "Zen Homestay Lâm Trường",
       lead: "Ẩn mình trong không gian lâm trường xanh mát tại Ba Vì, cách trung tâm Hà Nội khoảng 45 phút di chuyển — nơi lý tưởng để nghỉ ngơi trước và sau mỗi vòng golf.",
       features: [
@@ -43,7 +64,7 @@ export const translations = {
       ],
     },
     golf: {
-      eyebrow: "02 · Sân golf lân cận",
+      eyebrow: "03 · Sân golf lân cận",
       title: "3 sân golf gần Zen Homestay Lâm Trường",
       lead: "Tất cả đều nằm trong bán kính di chuyển hợp lý từ homestay, thuộc khu vực Ba Vì – Sơn Tây – Thạch Thất, phía Tây Hà Nội.",
       note: "* Hình ảnh tham khảo từ các sân golf tại Hà Nội — sẽ được thay bằng ảnh thực tế của từng sân khi có.",
@@ -162,7 +183,7 @@ export const translations = {
       ],
     },
     packages: {
-      eyebrow: "03 · Gói dịch vụ",
+      eyebrow: "04 · Gói dịch vụ",
       title: "Gói nghỉ dưỡng & golf trọn gói",
       lead: "Linh hoạt kết hợp vé máy bay, nghỉ dưỡng, chơi golf và ăn uống theo nhu cầu của bạn.",
       items: [
@@ -197,13 +218,13 @@ export const translations = {
       ],
     },
     gallery: {
-      eyebrow: "04 · Thư viện",
+      eyebrow: "05 · Thư viện",
       title: "Hình ảnh & video giới thiệu",
       note: "* Ảnh tham khảo từ các khu nghỉ dưỡng, sân golf và quán cafe/bar tại khu vực Hà Nội — sẽ thay bằng ảnh/video thật của homestay khi có.",
       alt: "Ảnh minh họa Zen Homestay & sân golf lân cận",
     },
     faq: {
-      eyebrow: "05 · Hỏi đáp",
+      eyebrow: "06 · Hỏi đáp",
       title: "Câu hỏi thường gặp",
       items: [
         {
@@ -225,7 +246,7 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "06 · Liên hệ",
+      eyebrow: "07 · Liên hệ",
       title: "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn",
       lead: "Không cần thanh toán ngay. Đội ngũ Sales/CSKH sẽ liên hệ trong vòng 24 giờ để tư vấn chi tiết và báo giá phù hợp với nhu cầu của bạn.",
       points: [
@@ -263,6 +284,7 @@ export const translations = {
   },
   kr: {
     nav: {
+      about: "회사 소개",
       destination: "숙소 소개",
       golf: "골프장",
       packages: "패키지",
@@ -278,8 +300,28 @@ export const translations = {
       ctaPrimary: "무료 상담 신청",
       ctaGhost: "골프장 지도 보기",
     },
+    about: {
+      eyebrow: "01 · 회사 소개",
+      title: "젠 홈스테이 럼 쯔엉 — 자연 속에서 느긋하게 즐기는 휴식",
+      lead: "바비(Ba Vì)의 자연과 골프에 대한 애정에서 시작된 젠 홈스테이 럼 쯔엉은, 라운딩 전후의 여유로운 휴식으로 골프 여행을 완성해주는 조용한 쉼터로 만들어졌습니다.",
+      values: [
+        {
+          label: "미션",
+          text: "하노이에서의 골프 여행마다 자연과 가까운 미니멀한 휴식 경험을 선사합니다.",
+        },
+        {
+          label: "공간",
+          text: "일본 젠(禪) 철학에서 영감을 받은 건축으로, 바비 임업 지대의 소나무숲과 차밭과 조화를 이룹니다.",
+        },
+        {
+          label: "약속",
+          text: "예약부터 골프장 부킹, 여행 중 픽업까지 정성을 다해 함께합니다.",
+        },
+      ],
+      imageAlt: "바비산에 위치한 젠 홈스테이 럼 쯔엉의 휴식 공간",
+    },
     destination: {
-      eyebrow: "01 · 숙소 소개",
+      eyebrow: "02 · 숙소 소개",
       title: "젠 홈스테이 럼 쯔엉",
       lead: "바비(Ba Vì)의 푸른 임업 지대에 자리해 하노이 시내에서 약 45분 거리에 있습니다. 골프 라운딩 전후 휴식을 취하기에 이상적인 공간입니다.",
       features: [
@@ -302,7 +344,7 @@ export const translations = {
       ],
     },
     golf: {
-      eyebrow: "02 · 인근 골프장",
+      eyebrow: "03 · 인근 골프장",
       title: "젠 홈스테이 럼 쯔엉 인근 3대 골프장",
       lead: "모두 숙소에서 무리 없이 이동 가능한 거리에 있으며, 하노이 서쪽 바비 – 선떠이 – 탁텃 지역에 위치합니다.",
       note: "* 이미지는 하노이 지역 골프장 참고 사진이며, 추후 각 골프장의 실제 사진으로 교체됩니다.",
@@ -421,7 +463,7 @@ export const translations = {
       ],
     },
     packages: {
-      eyebrow: "03 · 패키지",
+      eyebrow: "04 · 패키지",
       title: "휴식 & 골프 올인클루시브 패키지",
       lead: "항공권, 숙박, 골프, 식사를 원하는 대로 자유롭게 조합할 수 있습니다.",
       items: [
@@ -456,13 +498,13 @@ export const translations = {
       ],
     },
     gallery: {
-      eyebrow: "04 · 갤러리",
+      eyebrow: "05 · 갤러리",
       title: "사진 & 영상",
       note: "* 하노이 지역 리조트, 골프장, 카페/바의 참고 이미지이며, 추후 실제 숙소 사진/영상으로 교체됩니다.",
       alt: "젠 홈스테이 및 인근 골프장 참고 이미지",
     },
     faq: {
-      eyebrow: "05 · 자주 묻는 질문",
+      eyebrow: "06 · 자주 묻는 질문",
       title: "자주 묻는 질문",
       items: [
         {
@@ -484,7 +526,7 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "06 · 문의",
+      eyebrow: "07 · 문의",
       title: "정보를 남겨주시면 상담해 드립니다",
       lead: "지금 바로 결제하실 필요는 없습니다. 상담팀이 24시간 이내에 연락드려 필요에 맞는 상세 견적을 안내해 드립니다.",
       points: [

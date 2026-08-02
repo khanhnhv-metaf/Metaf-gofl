@@ -27,6 +27,10 @@
   }
 }
 
+:root {
+  --font-kr: Batang, BatangChe, serif;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-surface: var(--surface);

@@ -9,6 +9,7 @@ export default function SiteHeader() {
   const { lang, setLang, t } = useLanguage();
 
   const NAV_ITEMS = [
+    { href: "/#about", label: t.nav.about },
     { href: "/#destination", label: t.nav.destination },
     { href: "/golf", label: t.nav.golf },
     { href: "/#packages", label: t.nav.packages },

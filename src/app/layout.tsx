@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Be_Vietnam_Pro, Noto_Sans_KR } from "next/font/google";
+import { Cormorant_Garamond, Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
 
@@ -12,12 +12,6 @@ const displayFont = Cormorant_Garamond({
 const bodyFont = Be_Vietnam_Pro({
   variable: "--font-sans",
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const koreanFont = Noto_Sans_KR({
-  variable: "--font-kr",
-  subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
@@ -35,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${displayFont.variable} ${bodyFont.variable} ${koreanFont.variable} h-full antialiased`}
+      className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LanguageProvider>{children}</LanguageProvider>

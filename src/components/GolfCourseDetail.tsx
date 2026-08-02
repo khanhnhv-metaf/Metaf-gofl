@@ -83,15 +83,9 @@ export default function GolfCourseDetail({ slug }: { slug: string }) {
           </div>
 
           <div className="rounded-2xl border border-line bg-surface p-6">
-            <span className="block text-xs uppercase tracking-wide text-ink-soft">
-              {g.priceLabel}
-            </span>
-            <span className="mt-1 block font-display text-2xl text-fairway-2">
-              {g.pricePlaceholder}
-            </span>
             <Link
               href="/#contact"
-              className="mt-4 block rounded-full bg-brass px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
+              className="block rounded-full bg-brass px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
             >
               {g.contactCta}
             </Link>

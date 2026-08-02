@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/SiteHeader";
 import Hero from "@/components/Hero";
+import AboutUs from "@/components/AboutUs";
 import Destination from "@/components/Destination";
 import GolfCourses from "@/components/GolfCourses";
 import Packages from "@/components/Packages";
@@ -14,6 +15,7 @@ export default function Home() {
       <SiteHeader />
       <main className="flex-1">
         <Hero />
+        <AboutUs />
         <Destination />
         <GolfCourses />
         <Packages />
