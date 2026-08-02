@@ -7,7 +7,6 @@ export const translations = {
       destination: "Điểm đến",
       golf: "Sân golf",
       packages: "Gói dịch vụ",
-      gallery: "Thư viện",
       faq: "FAQ",
       cta: "Nhận tư vấn",
     },
@@ -22,20 +21,20 @@ export const translations = {
     },
     about: {
       eyebrow: "01 · Về chúng tôi",
-      title: "Zen Homestay Lâm Trường — nghỉ dưỡng chậm rãi giữa thiên nhiên",
-      lead: "Ra đời từ tình yêu với thiên nhiên Ba Vì và golf, Zen Homestay Lâm Trường được xây dựng như một điểm dừng chân yên tĩnh, nơi mỗi hành trình chơi golf được trọn vẹn hơn nhờ những khoảng nghỉ chậm rãi trước và sau vòng đấu.",
+      title: "Zen Homestay Lâm Trường — Chạm đến sự cân bằng giữa golf và thiên nhiên",
+      lead: "Lấy cảm hứng từ vẻ đẹp nguyên bản của Sóc Sơn, Zen Homestay Lâm Trường mang đến không gian nghỉ dưỡng thanh bình, nơi mỗi kỳ nghỉ không chỉ là hành trình chơi golf mà còn là cơ hội để thư giãn, kết nối với thiên nhiên và tận hưởng những trải nghiệm trọn vẹn.",
       values: [
         {
           label: "Sứ mệnh",
-          text: "Mang đến trải nghiệm nghỉ dưỡng tối giản, gần gũi thiên nhiên cho mỗi hành trình chơi golf tại Hà Nội.",
+          text: "Mang đến trải nghiệm golf kết hợp nghỉ dưỡng thật trọn vẹn cho quý khách, nơi mỗi chuyến đi là sự cân bằng giữa thể thao, thư giãn và hòa mình vào thiên nhiên.",
         },
         {
           label: "Không gian",
-          text: "Kiến trúc lấy cảm hứng từ triết lý Thiền (Zen) Nhật Bản, hòa cùng rừng thông và đồi chè lâm trường Ba Vì.",
+          text: "Ẩn mình giữa rừng thông và thiên nhiên Sóc Sơn, không gian mang cảm hứng Zen Nhật Bản, kết hợp kiến trúc tối giản cùng vẻ đẹp nguyên bản của thiên nhiên để tạo nên chốn nghỉ dưỡng yên bình.",
         },
         {
           label: "Cam kết",
-          text: "Đội ngũ tận tâm, đồng hành từ lúc đặt phòng, đặt sân golf đến đưa đón trong suốt chuyến đi.",
+          text: "Đồng hành cùng bạn trong từng hành trình – từ đặt phòng, đặt sân golf, đưa đón đến chăm sóc xuyên suốt kỳ nghỉ – với dịch vụ tận tâm, chuyên nghiệp và chỉn chu trong từng chi tiết.",
         },
       ],
       imageAlt: "Không gian nghỉ dưỡng của Zen Homestay Lâm Trường tại Ba Vì",
@@ -67,7 +66,6 @@ export const translations = {
       eyebrow: "03 · Sân golf lân cận",
       title: "3 sân golf gần Zen Homestay Lâm Trường",
       lead: "Tất cả đều nằm trong bán kính di chuyển hợp lý từ homestay, thuộc khu vực Ba Vì – Sơn Tây – Thạch Thất, phía Tây Hà Nội.",
-      note: "* Hình ảnh tham khảo từ các sân golf tại Hà Nội — sẽ được thay bằng ảnh thực tế của từng sân khi có.",
       viewAllCta: "Xem toàn bộ sân golf tại Hà Nội",
       courses: [
         {
@@ -217,14 +215,8 @@ export const translations = {
         },
       ],
     },
-    gallery: {
-      eyebrow: "05 · Thư viện",
-      title: "Hình ảnh & video giới thiệu",
-      note: "* Ảnh tham khảo từ các khu nghỉ dưỡng, sân golf và quán cafe/bar tại khu vực Hà Nội — sẽ thay bằng ảnh/video thật của homestay khi có.",
-      alt: "Ảnh minh họa Zen Homestay & sân golf lân cận",
-    },
     faq: {
-      eyebrow: "06 · Hỏi đáp",
+      eyebrow: "05 · Hỏi đáp",
       title: "Câu hỏi thường gặp",
       items: [
         {
@@ -246,7 +238,7 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "07 · Liên hệ",
+      eyebrow: "06 · Liên hệ",
       title: "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn",
       lead: "Không cần thanh toán ngay. Đội ngũ Sales/CSKH sẽ liên hệ trong vòng 24 giờ để tư vấn chi tiết và báo giá phù hợp với nhu cầu của bạn.",
       points: [
@@ -279,7 +271,7 @@ export const translations = {
     },
     footer: {
       address: "Xã Yên Bài, huyện Ba Vì, Hà Nội",
-      note: "© 2026 Zen Homestay Lâm Trường. Trang mẫu concept — hình ảnh sẽ được thay bằng ảnh thật.",
+      note: "© 2026 Zen Homestay Lâm Trường.",
     },
   },
   kr: {
@@ -288,7 +280,6 @@ export const translations = {
       destination: "숙소 소개",
       golf: "골프장",
       packages: "패키지",
-      gallery: "갤러리",
       faq: "자주 묻는 질문",
       cta: "상담 신청",
     },
@@ -302,20 +293,20 @@ export const translations = {
     },
     about: {
       eyebrow: "01 · 회사 소개",
-      title: "젠 홈스테이 럼 쯔엉 — 자연 속에서 느긋하게 즐기는 휴식",
-      lead: "바비(Ba Vì)의 자연과 골프에 대한 애정에서 시작된 젠 홈스테이 럼 쯔엉은, 라운딩 전후의 여유로운 휴식으로 골프 여행을 완성해주는 조용한 쉼터로 만들어졌습니다.",
+      title: "젠 홈스테이 럼 쯔엉 — 골프와 자연이 만나는 균형점",
+      lead: "쏙선(Sóc Sơn)의 자연 그대로의 아름다움에서 영감을 받은 젠 홈스테이 럼 쯔엉은 평온한 휴식 공간을 선사합니다. 이곳에서의 매 여행은 골프 라운딩을 넘어, 휴식하고 자연과 교감하며 완전한 경험을 만끽하는 시간이 됩니다.",
       values: [
         {
           label: "미션",
-          text: "하노이에서의 골프 여행마다 자연과 가까운 미니멀한 휴식 경험을 선사합니다.",
+          text: "고객님께 골프와 휴식이 어우러진 완벽한 경험을 선사합니다. 매 여행이 스포츠, 휴식, 그리고 자연과의 교감이 균형을 이루는 시간이 되도록 합니다.",
         },
         {
           label: "공간",
-          text: "일본 젠(禪) 철학에서 영감을 받은 건축으로, 바비 임업 지대의 소나무숲과 차밭과 조화를 이룹니다.",
+          text: "소나무숲과 쏙선(Sóc Sơn)의 자연에 둘러싸인 공간은 일본 젠(禪)에서 영감을 받아, 미니멀한 건축과 자연 그대로의 아름다움이 어우러진 평온한 휴식처를 만들어냅니다.",
         },
         {
           label: "약속",
-          text: "예약부터 골프장 부킹, 여행 중 픽업까지 정성을 다해 함께합니다.",
+          text: "예약, 골프장 부킹, 픽업부터 여행 내내 이어지는 케어까지 — 정성스럽고 전문적이며 세심한 서비스로 모든 여정을 함께합니다.",
         },
       ],
       imageAlt: "바비산에 위치한 젠 홈스테이 럼 쯔엉의 휴식 공간",
@@ -347,7 +338,6 @@ export const translations = {
       eyebrow: "03 · 인근 골프장",
       title: "젠 홈스테이 럼 쯔엉 인근 3대 골프장",
       lead: "모두 숙소에서 무리 없이 이동 가능한 거리에 있으며, 하노이 서쪽 바비 – 선떠이 – 탁텃 지역에 위치합니다.",
-      note: "* 이미지는 하노이 지역 골프장 참고 사진이며, 추후 각 골프장의 실제 사진으로 교체됩니다.",
       viewAllCta: "하노이 전체 골프장 보기",
       courses: [
         {
@@ -497,14 +487,8 @@ export const translations = {
         },
       ],
     },
-    gallery: {
-      eyebrow: "05 · 갤러리",
-      title: "사진 & 영상",
-      note: "* 하노이 지역 리조트, 골프장, 카페/바의 참고 이미지이며, 추후 실제 숙소 사진/영상으로 교체됩니다.",
-      alt: "젠 홈스테이 및 인근 골프장 참고 이미지",
-    },
     faq: {
-      eyebrow: "06 · 자주 묻는 질문",
+      eyebrow: "05 · 자주 묻는 질문",
       title: "자주 묻는 질문",
       items: [
         {
@@ -526,7 +510,7 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "07 · 문의",
+      eyebrow: "06 · 문의",
       title: "정보를 남겨주시면 상담해 드립니다",
       lead: "지금 바로 결제하실 필요는 없습니다. 상담팀이 24시간 이내에 연락드려 필요에 맞는 상세 견적을 안내해 드립니다.",
       points: [
@@ -558,7 +542,7 @@ export const translations = {
     },
     footer: {
       address: "하노이 바비현 옌바이사",
-      note: "© 2026 Zen Homestay Lâm Trường. 컨셉 시안 페이지이며, 이미지는 추후 실제 사진으로 교체됩니다.",
+      note: "© 2026 Zen Homestay Lâm Trường.",
     },
   },
 };

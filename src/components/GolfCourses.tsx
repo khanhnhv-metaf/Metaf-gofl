@@ -57,7 +57,6 @@ export default function GolfCourses() {
             </article>
           ))}
         </div>
-        <p className="mt-6 text-xs text-ink-soft">{g.note}</p>
       </div>
     </section>
   );

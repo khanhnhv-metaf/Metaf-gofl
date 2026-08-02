@@ -28,7 +28,6 @@
 }
 
 :root {
-  --font-kr: Batang, BatangChe, serif;
   --header: #065a2a;
   --header-soft: #0a7538;
 }
@@ -46,8 +45,8 @@
   --color-jade: var(--jade);
   --color-header: var(--header);
   --color-header-soft: var(--header-soft);
-  --font-display: var(--font-serif), var(--font-kr);
-  --font-body: var(--font-sans), var(--font-kr);
+  --font-display: var(--font-song-myung);
+  --font-body: var(--font-song-myung);
 }
 
 * {
@@ -71,7 +70,7 @@ h1, h2, h3 {
 }
 
 .section-eyebrow {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--brass);

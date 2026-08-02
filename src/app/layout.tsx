@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Be_Vietnam_Pro } from "next/font/google";
+import { Song_Myung } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
 
-const displayFont = Cormorant_Garamond({
-  variable: "--font-serif",
-  subsets: ["latin", "vietnamese"],
-  weight: ["500", "600", "700"],
-});
-
-const bodyFont = Be_Vietnam_Pro({
-  variable: "--font-sans",
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700"],
+const songMyung = Song_Myung({
+  variable: "--font-song-myung",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
+      className={`${songMyung.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LanguageProvider>{children}</LanguageProvider>

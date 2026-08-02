@@ -4,7 +4,6 @@ import AboutUs from "@/components/AboutUs";
 import Destination from "@/components/Destination";
 import GolfCourses from "@/components/GolfCourses";
 import Packages from "@/components/Packages";
-import Gallery from "@/components/Gallery";
 import Faq from "@/components/Faq";
 import ContactSection from "@/components/ContactSection";
 import SiteFooter from "@/components/SiteFooter";
@@ -19,7 +18,6 @@ export default function Home() {
         <Destination />
         <GolfCourses />
         <Packages />
-        <Gallery />
         <Faq />
         <ContactSection />
       </main>

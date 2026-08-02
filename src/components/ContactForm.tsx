@@ -86,31 +86,30 @@ export default function ContactForm() {
         </select>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="grid gap-1.5">
-          <label htmlFor="date" className="text-sm font-medium">
-            {f.date}
-          </label>
-          <input
-            id="date"
-            name="date"
-            type="date"
-            className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
-          />
-        </div>
-        <div className="grid gap-1.5">
-          <label htmlFor="guests" className="text-sm font-medium">
-            {f.guests}
-          </label>
-          <input
-            id="guests"
-            name="guests"
-            type="number"
-            min={1}
-            defaultValue={2}
-            className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
-          />
-        </div>
+      <div className="grid gap-1.5">
+        <label htmlFor="date" className="text-sm font-medium">
+          {f.date}
+        </label>
+        <input
+          id="date"
+          name="date"
+          type="date"
+          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+        />
+      </div>
+
+      <div className="grid gap-1.5">
+        <label htmlFor="guests" className="text-sm font-medium">
+          {f.guests}
+        </label>
+        <input
+          id="guests"
+          name="guests"
+          type="number"
+          min={1}
+          defaultValue={2}
+          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+        />
       </div>
 
       <div className="grid gap-1.5">

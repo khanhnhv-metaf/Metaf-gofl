@@ -14,7 +14,6 @@ export default function SiteHeader() {
     { href: "/#destination", label: t.nav.destination },
     { href: "/golf", label: t.nav.golf },
     { href: "/#packages", label: t.nav.packages },
-    { href: "/#gallery", label: t.nav.gallery },
     { href: "/#faq", label: t.nav.faq },
   ];
 
