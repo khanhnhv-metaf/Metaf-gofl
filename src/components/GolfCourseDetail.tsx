@@ -82,14 +82,12 @@ export default function GolfCourseDetail({ slug }: { slug: string }) {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-line bg-surface p-6">
-            <Link
-              href="/#contact"
-              className="block rounded-full bg-brass px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
-            >
-              {g.contactCta}
-            </Link>
-          </div>
+          <Link
+            href="/#contact"
+            className="block h-fit rounded-full bg-brass px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
+          >
+            {g.contactCta}
+          </Link>
         </div>
 
         {rest.length > 0 && (

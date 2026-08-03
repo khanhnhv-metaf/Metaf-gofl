@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
-import { IMAGES } from "@/lib/images";
+import roomImage from "@/app/asset/bedroom.jpg";
+import outdoorImage from "@/app/asset/outdoor.jpg";
+import massageImage from "@/app/asset/massage-room.jpg";
 
 export default function Destination() {
   const { t } = useLanguage();
@@ -21,7 +23,7 @@ export default function Destination() {
           <div className="grid grid-cols-2 gap-3">
             <div className="relative col-span-2 aspect-[16/11] overflow-hidden rounded-2xl">
               <Image
-                src={IMAGES.rooms[0]}
+                src={roomImage}
                 alt="Phòng nghỉ phong cách villa tại khu nghỉ dưỡng Sóc Sơn"
                 fill
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -30,8 +32,8 @@ export default function Destination() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-2xl">
               <Image
-                src={IMAGES.pool[0]}
-                alt="Bể bơi ngoài trời tại khu nghỉ dưỡng Sóc Sơn"
+                src={outdoorImage}
+                alt="Không gian ngoài trời tại khu nghỉ dưỡng Sóc Sơn"
                 fill
                 sizes="(max-width: 1024px) 50vw, 27vw"
                 className="object-cover"
@@ -39,8 +41,8 @@ export default function Destination() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-2xl">
               <Image
-                src={IMAGES.lobby[0]}
-                alt="Không gian sảnh và khu vực chung tại khu nghỉ dưỡng Sóc Sơn"
+                src={massageImage}
+                alt="Phòng massage & thư giãn tại khu nghỉ dưỡng Sóc Sơn"
                 fill
                 sizes="(max-width: 1024px) 50vw, 27vw"
                 className="object-cover"

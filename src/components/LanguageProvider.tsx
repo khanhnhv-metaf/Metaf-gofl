@@ -21,7 +21,7 @@ const LanguageContext = createContext<LanguageContextValue | null>(null);
 const STORAGE_KEY = "zen-homestay-lang";
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("vi");
+  const [lang, setLangState] = useState<Lang>("kr");
 
   useEffect(() => {
     const saved = window.localStorage.getItem(STORAGE_KEY);

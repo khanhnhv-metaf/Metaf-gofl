@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
-import { IMAGES } from "@/lib/images";
+import aboutImage from "@/app/asset/outside2.jpg";
 
 export default function AboutUs() {
   const { t } = useLanguage();
@@ -20,7 +20,7 @@ export default function AboutUs() {
         <div className="mt-10 grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
-              src={IMAGES.lobby[1]}
+              src={aboutImage}
               alt={a.imageAlt}
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"

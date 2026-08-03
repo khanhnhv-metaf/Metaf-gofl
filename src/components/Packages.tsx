@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
-import { IMAGES } from "@/lib/images";
+import bedroom2 from "@/app/asset/bedroom-2.jpg";
+import outside2 from "@/app/asset/outside2.jpg";
+import outside from "@/app/asset/outside.jpg";
 
-const PACKAGE_IMAGES = [IMAGES.packages[0], IMAGES.packages[1], IMAGES.packages[2]];
+const PACKAGE_IMAGES = [bedroom2, outside2, outside];
 
 export default function Packages() {
   const { t } = useLanguage();
