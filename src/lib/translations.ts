@@ -11,9 +11,9 @@ export const translations = {
       cta: "Nhận tư vấn",
     },
     hero: {
-      eyebrow: "Ba Vì · Hà Nội",
+      eyebrow: "Sóc Sơn · Hà Nội",
       title:
-        "Nghỉ dưỡng tĩnh lặng bên chân núi Ba Vì, trọn vẹn hành trình golf của bạn",
+        "Nghỉ dưỡng tĩnh lặng giữa núi rừng Sóc Sơn, trọn vẹn hành trình golf của bạn",
       subtitle:
         "Zen Homestay Lâm Trường — điểm nghỉ dưỡng cố định gần các sân golf hàng đầu Hà Nội: Đồng Mô, Asean Onsen, Sky Lake. Để lại thông tin, đội ngũ của chúng tôi lo phần còn lại.",
       ctaPrimary: "Nhận tư vấn miễn phí",
@@ -37,16 +37,16 @@ export const translations = {
           text: "Đồng hành cùng bạn trong từng hành trình – từ đặt phòng, đặt sân golf, đưa đón đến chăm sóc xuyên suốt kỳ nghỉ – với dịch vụ tận tâm, chuyên nghiệp và chỉn chu trong từng chi tiết.",
         },
       ],
-      imageAlt: "Không gian nghỉ dưỡng của Zen Homestay Lâm Trường tại Ba Vì",
+      imageAlt: "Không gian nghỉ dưỡng của Zen Homestay Lâm Trường tại Sóc Sơn",
     },
     destination: {
       eyebrow: "02 · Điểm đến",
       title: "Zen Homestay Lâm Trường",
-      lead: "Ẩn mình trong không gian lâm trường xanh mát tại Ba Vì, cách trung tâm Hà Nội khoảng 45 phút di chuyển — nơi lý tưởng để nghỉ ngơi trước và sau mỗi vòng golf.",
+      lead: "Ẩn mình trong không gian lâm trường xanh mát tại Sóc Sơn, cách trung tâm Hà Nội khoảng 45 phút di chuyển — nơi lý tưởng để nghỉ ngơi trước và sau mỗi vòng golf.",
       features: [
         {
           label: "Vị trí",
-          text: "Xã Yên Bài, huyện Ba Vì, Hà Nội; dưới chân dãy núi Ba Vì, gần hồ Suối Hai.",
+          text: "Huyện Sóc Sơn, Hà Nội; dưới chân dãy núi Sóc Sơn, gần hồ Đồng Quan.",
         },
         {
           label: "Không gian",
@@ -65,7 +65,7 @@ export const translations = {
     golf: {
       eyebrow: "03 · Sân golf lân cận",
       title: "3 sân golf gần Zen Homestay Lâm Trường",
-      lead: "Tất cả đều nằm trong bán kính di chuyển hợp lý từ homestay, thuộc khu vực Ba Vì – Sơn Tây – Thạch Thất, phía Tây Hà Nội.",
+      lead: "Tất cả đều nằm trong bán kính di chuyển hợp lý từ homestay, thuộc khu vực Sóc Sơn – Sơn Tây – Thạch Thất, phía Bắc Hà Nội.",
       viewAllCta: "Xem toàn bộ sân golf tại Hà Nội",
       courses: [
         {
@@ -73,7 +73,7 @@ export const translations = {
           distance: "~12 km",
           tag: "36 hố · Bên hồ",
           seed: "dong-mo-golf",
-          text: "36 hố, thiết kế bởi Peter Thomson & Michael Wolveridge, nằm bên hồ Đồng Mô dưới chân núi Ba Vì. Một trong những sân golf lâu đời và uy tín nhất miền Bắc.",
+          text: "36 hố, thiết kế bởi Peter Thomson & Michael Wolveridge, nằm bên hồ Đồng Mô dưới chân núi Sóc Sơn. Một trong những sân golf lâu đời và uy tín nhất miền Bắc.",
         },
         {
           name: "Asean Onsen Golf & Resort",
@@ -115,7 +115,7 @@ export const translations = {
           distance: "~45 phút từ trung tâm Hà Nội",
           holes: "36 hố + Kings Course 19 hố",
           highlight: "Sân golf 36 hố đầu tiên của Việt Nam",
-          text: "Nằm bên hồ Đồng Mô dưới chân núi Ba Vì, gồm 3 sân: Lakeside (ven hồ), Mountain View (view núi) và Kings Course do Jack Nicklaus II thiết kế với hố 19 đảo nổi độc đáo.",
+          text: "Nằm bên hồ Đồng Mô dưới chân núi Sóc Sơn, gồm 3 sân: Lakeside (ven hồ), Mountain View (view núi) và Kings Course do Jack Nicklaus II thiết kế với hố 19 đảo nổi độc đáo.",
           details: [
             "Di chuyển bằng du thuyền qua hồ Đồng Mô để tới clubhouse trên đảo",
             "Sân Mountain View thiết kế bởi Pacific Coast Designs (Úc)",
@@ -176,6 +176,48 @@ export const translations = {
             "Sân golf tư nhân đầu tiên tại Việt Nam đạt tiêu chuẩn quốc tế",
             "Thiết kế bởi Peter Rousseau, hài hòa với địa hình và hồ nước tự nhiên",
             "Chỉ cách sân bay Nội Bài khoảng 20 phút di chuyển",
+          ],
+        },
+        {
+          slug: "minh-tri",
+          name: "Hanoi Golf Club (Minh Trí)",
+          location: "Xã Minh Trí, huyện Sóc Sơn, Hà Nội",
+          distance: "~40 phút từ trung tâm Hà Nội",
+          holes: "27 hố",
+          highlight: "Sân 27 hố duy nhất tại Việt Nam do KTS Nhật Bản thiết kế",
+          text: "Do kiến trúc sư Susumu Fujitwara (Nhật Bản) thiết kế trên diện tích 108ha, gồm 3 khu: A (địa hình bằng phẳng), B (đồi núi) và C (ven hồ), mang đến trải nghiệm đa dạng cho mọi trình độ.",
+          details: [
+            "Sân duy nhất tại Việt Nam có 27 hố theo phong cách Nhật Bản",
+            "Mặt cỏ Tipton 328 cao cấp, thường dùng tại các sân golf danh tiếng",
+            "Hỗ trợ chơi golf ban đêm bên cạnh golf ban ngày",
+          ],
+        },
+        {
+          slug: "thanh-lanh",
+          name: "Thanh Lanh Valley Golf & Resort",
+          location: "Xã Trung Mỹ, huyện Bình Xuyên, Vĩnh Phúc",
+          distance: "~60 km từ trung tâm Hà Nội",
+          holes: "18 hố, hơn 7.000 yards",
+          highlight: "Sân golf trên cao 1.000m dưới chân núi Tam Đảo",
+          text: "Được thiết kế bởi IMG trên diện tích hơn 73ha dưới chân dãy núi Tam Đảo, sân nằm ở độ cao khoảng 1.000m so với mực nước biển nên khí hậu mát mẻ quanh năm, nhiệt độ trung bình 18–25°C.",
+          details: [
+            "Thiết kế bởi IMG, đơn vị thiết kế sân golf danh tiếng toàn cầu",
+            "Tổng chiều dài sân hơn 7.000 yards, nhiều hố par 5 thử thách",
+            "Khí hậu mát mẻ quanh năm nhờ độ cao 1.000m so với mực nước biển",
+          ],
+        },
+        {
+          slug: "dai-lai",
+          name: "Đại Lải Golf Club",
+          location: "Chân núi Ngọc Thanh, huyện Phúc Yên, Vĩnh Phúc",
+          distance: "~40 km từ trung tâm Hà Nội",
+          holes: "27 hố",
+          highlight: "Sân golf nhiều hồ nước và địa hình đồi uốn lượn",
+          text: "Do Peter Waddell và Linkshape Australia thiết kế, sân tận dụng tối đa địa hình đồi núi tự nhiên với nhiều hồ nước lớn nhỏ xen kẽ, tạo nên các bẫy nước đầy thử thách ngay từ hố đầu tiên.",
+          details: [
+            "27 hố thiết kế bởi Peter Waddell (Linkshape Australia)",
+            "Nhiều hồ nước lớn nhỏ xen kẽ tạo bẫy nước thử thách",
+            "Nằm dưới chân dãy núi Ngọc Thanh, cách trung tâm Hà Nội chưa đầy 40km",
           ],
         },
       ],
@@ -242,9 +284,8 @@ export const translations = {
       title: "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn",
       lead: "Không cần thanh toán ngay. Đội ngũ Sales/CSKH sẽ liên hệ trong vòng 24 giờ để tư vấn chi tiết và báo giá phù hợp với nhu cầu của bạn.",
       points: [
-        "Tư vấn miễn phí, không ràng buộc",
+        "Tư vấn miễn phí",
         "Phản hồi trong vòng 24 giờ",
-        "Hỗ trợ song ngữ Hàn – Việt",
       ],
       form: {
         name: "Họ tên",
@@ -270,7 +311,7 @@ export const translations = {
       },
     },
     footer: {
-      address: "Xã Yên Bài, huyện Ba Vì, Hà Nội",
+      address: "Huyện Sóc Sơn, Hà Nội",
       note: "© 2026 Zen Homestay Lâm Trường.",
     },
   },
@@ -284,8 +325,8 @@ export const translations = {
       cta: "상담 신청",
     },
     hero: {
-      eyebrow: "바비산 · 하노이",
-      title: "바비산 자락의 고요한 휴식, 완벽한 골프 여행",
+      eyebrow: "쏙선 · 하노이",
+      title: "쏙선의 고요한 휴식, 완벽한 골프 여행",
       subtitle:
         "젠 홈스테이 럼 쯔엉(Zen Homestay Lâm Trường) — 하노이 최고의 골프장인 동모(Đồng Mô), 아세안 온천(Asean Onsen), 스카이레이크(Sky Lake)와 가까운 고정 리조트입니다. 정보를 남겨주시면 나머지는 저희가 준비합니다.",
       ctaPrimary: "무료 상담 신청",
@@ -309,16 +350,16 @@ export const translations = {
           text: "예약, 골프장 부킹, 픽업부터 여행 내내 이어지는 케어까지 — 정성스럽고 전문적이며 세심한 서비스로 모든 여정을 함께합니다.",
         },
       ],
-      imageAlt: "바비산에 위치한 젠 홈스테이 럼 쯔엉의 휴식 공간",
+      imageAlt: "쏙선에 위치한 젠 홈스테이 럼 쯔엉의 휴식 공간",
     },
     destination: {
       eyebrow: "02 · 숙소 소개",
       title: "젠 홈스테이 럼 쯔엉",
-      lead: "바비(Ba Vì)의 푸른 임업 지대에 자리해 하노이 시내에서 약 45분 거리에 있습니다. 골프 라운딩 전후 휴식을 취하기에 이상적인 공간입니다.",
+      lead: "쏙선(Sóc Sơn)의 푸른 임업 지대에 자리해 하노이 시내에서 약 45분 거리에 있습니다. 골프 라운딩 전후 휴식을 취하기에 이상적인 공간입니다.",
       features: [
         {
           label: "위치",
-          text: "하노이 바비현 옌바이사, 바비산맥 자락, 수오이하이 호수 인근.",
+          text: "하노이 쏙선현, 쏙선 산자락, 동꽌 호수 인근.",
         },
         {
           label: "공간",
@@ -337,7 +378,7 @@ export const translations = {
     golf: {
       eyebrow: "03 · 인근 골프장",
       title: "젠 홈스테이 럼 쯔엉 인근 3대 골프장",
-      lead: "모두 숙소에서 무리 없이 이동 가능한 거리에 있으며, 하노이 서쪽 바비 – 선떠이 – 탁텃 지역에 위치합니다.",
+      lead: "모두 숙소에서 무리 없이 이동 가능한 거리에 있으며, 하노이 북쪽 쏙선 – 선떠이 – 탁텃 지역에 위치합니다.",
       viewAllCta: "하노이 전체 골프장 보기",
       courses: [
         {
@@ -345,7 +386,7 @@ export const translations = {
           distance: "약 12km",
           tag: "36홀 · 호수 인접",
           seed: "dong-mo-golf",
-          text: "피터 톰슨 & 마이클 울버리지가 설계한 36홀 코스로, 바비산 자락 동모 호수 옆에 위치합니다. 북부 베트남에서 가장 오래되고 명성 있는 골프장 중 하나입니다.",
+          text: "피터 톰슨 & 마이클 울버리지가 설계한 36홀 코스로, 쏙선 자락 동모 호수 옆에 위치합니다. 북부 베트남에서 가장 오래되고 명성 있는 골프장 중 하나입니다.",
         },
         {
           name: "아세안 온천 골프 & 리조트",
@@ -387,7 +428,7 @@ export const translations = {
           distance: "하노이 시내에서 약 45분",
           holes: "36홀 + 킹스 코스 19홀",
           highlight: "베트남 최초의 36홀 골프장",
-          text: "바비산 자락 동모 호수 옆에 위치하며, 호수 코스(Lakeside), 산 전망 코스(Mountain View), 잭 니클라우스 2세가 설계한 독특한 섬 그린 19번 홀의 킹스 코스로 구성됩니다.",
+          text: "쏙선 자락 동모 호수 옆에 위치하며, 호수 코스(Lakeside), 산 전망 코스(Mountain View), 잭 니클라우스 2세가 설계한 독특한 섬 그린 19번 홀의 킹스 코스로 구성됩니다.",
           details: [
             "동모 호수를 가로지르는 보트를 타고 섬 안의 클럽하우스로 이동",
             "마운틴 뷰 코스는 호주 퍼시픽 코스트 디자인이 설계",
@@ -448,6 +489,48 @@ export const translations = {
             "베트남 최초로 국제 기준을 충족한 프라이빗 골프장",
             "피터 루소가 자연 지형과 호수를 살려 설계",
             "노이바이 국제공항에서 차로 약 20분 거리",
+          ],
+        },
+        {
+          slug: "minh-tri",
+          name: "하노이 골프 클럽 (민찌)",
+          location: "하노이 쏙선현 민찌사",
+          distance: "하노이 시내에서 약 40분",
+          holes: "27홀",
+          highlight: "일본인 설계자가 만든 베트남 유일의 27홀 코스",
+          text: "일본 건축가 스스무 후지와라가 설계했으며, 108헥타르 부지에 평지형 A코스, 산악지형 B코스, 호숫가 C코스로 구성되어 모든 실력의 골퍼에게 다양한 경험을 선사합니다.",
+          details: [
+            "베트남 유일의 일본식 27홀 골프장",
+            "명문 골프장에서 사용하는 고급 티프턴 328 잔디",
+            "주간 라운딩은 물론 야간 골프도 가능",
+          ],
+        },
+        {
+          slug: "thanh-lanh",
+          name: "타인란 밸리 골프 & 리조트",
+          location: "빈푹성 빈쑤옌현 쭝미사",
+          distance: "하노이 시내에서 약 60km",
+          holes: "18홀, 총 길이 7,000야드 이상",
+          highlight: "해발 1,000m, 땀다오 산자락의 고원 골프장",
+          text: "글로벌 골프장 설계사인 IMG가 73헥타르 부지에 설계했으며, 해발 약 1,000m에 위치해 연중 18~25도의 선선한 기후를 즐길 수 있습니다.",
+          details: [
+            "세계적인 골프장 설계사 IMG가 설계",
+            "총 길이 7,000야드 이상, 도전적인 파5 홀 다수",
+            "해발 1,000m에 위치해 연중 선선한 기후 유지",
+          ],
+        },
+        {
+          slug: "dai-lai",
+          name: "다이라이 골프 클럽",
+          location: "빈푹성 푹옌현, 응옥타인 산자락",
+          distance: "하노이 시내에서 약 40km",
+          holes: "27홀",
+          highlight: "호수와 굴곡진 언덕 지형이 특징인 골프장",
+          text: "피터 와델과 링크셰이프 오스트레일리아가 설계했으며, 자연 지형을 살린 굴곡진 언덕과 크고 작은 호수들이 곳곳에 배치되어 첫 홀부터 도전적인 워터해저드를 만나게 됩니다.",
+          details: [
+            "피터 와델(링크셰이프 오스트레일리아)이 설계한 27홀",
+            "크고 작은 호수가 곳곳에 배치되어 도전적인 워터해저드 형성",
+            "응옥타인 산자락에 위치, 하노이 시내에서 40km 이내",
           ],
         },
       ],
@@ -514,9 +597,8 @@ export const translations = {
       title: "정보를 남겨주시면 상담해 드립니다",
       lead: "지금 바로 결제하실 필요는 없습니다. 상담팀이 24시간 이내에 연락드려 필요에 맞는 상세 견적을 안내해 드립니다.",
       points: [
-        "무료 상담, 어떠한 의무도 없음",
+        "무료 상담",
         "24시간 이내 회신",
-        "한국어–베트남어 상담 지원",
       ],
       form: {
         name: "성함",
@@ -541,7 +623,7 @@ export const translations = {
       },
     },
     footer: {
-      address: "하노이 바비현 옌바이사",
+      address: "하노이 쏙선현",
       note: "© 2026 Zen Homestay Lâm Trường.",
     },
   },

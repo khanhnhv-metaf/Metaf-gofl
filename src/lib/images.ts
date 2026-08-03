@@ -49,17 +49,13 @@ export const IMAGES = {
       "https://elinkgolf.vn/wp-content/uploads/2020/11/brg-kings-island-golf-resort.jpg",
     ],
     "legend-hill": [
+      "https://elinkgolf.vn/wp-content/uploads/2020/11/hinh-anh-san-golf-rbg-legend-hill.jpg",
       "https://gabygolf.com/wp-content/uploads/2021/04/san-golf-brg-legend-hill-golf-resort-san-soc-son.jpg",
       "https://nicklausdesign.com/wp-content/uploads/2019/11/22-13.jpg",
-      "https://nicklausdesign.com/wp-content/uploads/2019/11/8-126.jpg",
-      "https://nicklausdesign.com/wp-content/uploads/2019/11/12-71.jpg",
-      "https://nicklausdesign.com/wp-content/uploads/2019/11/19-25.jpg",
-      "https://nicklausdesign.com/wp-content/uploads/2019/11/4-188.jpg",
     ],
     "sky-lake": [
       "https://ticotravel.com.vn/wp-content/uploads/2022/11/San-golf-Sky-lake-hoa-binh.jpg",
       "https://ticotravel.com.vn/wp-content/uploads/2022/10/San-Golf-Sky-Lake-1.jpg",
-      "https://ticotravel.com.vn/wp-content/uploads/2022/10/San-Golf-Sky-Lake-2.jpg",
       "https://ticotravel.com.vn/wp-content/uploads/2022/10/San-Golf-Sky-Lake-4.jpg",
       "https://ticotravel.com.vn/wp-content/uploads/2022/10/San-Golf-Sky-Lake-5.jpg",
       "https://ticotravel.com.vn/wp-content/uploads/2022/10/San-Golf-Sky-Lake-11.jpg",
@@ -68,13 +64,25 @@ export const IMAGES = {
       "https://elinkgolf.vn/wp-content/uploads/2020/07/san-golf-asean-resort.jpg",
       "https://elinkgolf.vn/wp-content/uploads/2020/11/san-golf-asean-resort-600x399.jpg",
       "https://elinkgolf.vn/wp-content/uploads/2020/11/asean-golf-resort.jpg",
-      "https://elinkgolf.vn/wp-content/uploads/2020/11/san-golf-asean-resort.jpg",
     ],
     "van-tri": [
       "https://sangolf.vn/wp-content/uploads/2021/05/motgoc-1286298000.jpg",
       "https://alegolf.com/medias/2018/12/Hinh-anh-San-Golf-Van-Tri-Van-Tri-Golf-Club-Alegolf-3.webp",
-      "https://sangolf.vn/wp-content/uploads/2018/01/25.jpg",
-      "https://sangolf.vn/wp-content/uploads/2021/05/5a5adb757c11a2bdccda76ecddabed72.jpg",
+    ],
+    "minh-tri": [
+      "https://elinkgolf.vn/wp-content/uploads/2020/11/san-golf-minh-tr%C3%AD.jpg",
+      "https://elinkgolf.vn/wp-content/uploads/2020/11/san-gon-minh-tri.jpg",
+      "https://elinkgolf.vn/wp-content/uploads/2020/11/san-golf-minh-tri-ha-noi-golf-club.jpg",
+    ],
+    "thanh-lanh": [
+      "https://golfgroup.com.vn/wp-content/uploads/2021/10/hinh-anh-san-golf-thanh-lanh-2.png",
+      "https://golfgroup.com.vn/wp-content/uploads/2021/10/hinh-anh-san-golf-thanh-lanh-3.png",
+      "https://golfgroup.com.vn/wp-content/uploads/2021/10/hinh-anh-san-golf-thanh-lanh-4.png",
+    ],
+    "dai-lai": [
+      "https://sangolf.vn/wp-content/uploads/2020/08/dai-lai-golf-club-01.jpg",
+      "https://elinkgolf.vn/wp-content/uploads/2020/11/san-golf-dai-lai.jpg",
+      "https://golfgroup.com.vn/wp-content/uploads/2021/06/san-golf-dai-lai-thiet-ke.jpg",
     ],
   },
 } as const;

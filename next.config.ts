@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "elinkgolf.vn" },
       { protocol: "https", hostname: "sangolf.vn" },
       { protocol: "https", hostname: "alegolf.com" },
+      { protocol: "https", hostname: "golfgroup.com.vn" },
+      { protocol: "https", hostname: "bizweb.dktcdn.net" },
     ],
   },
 };
