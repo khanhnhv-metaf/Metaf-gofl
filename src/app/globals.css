@@ -70,7 +70,7 @@ h1, h2, h3 {
 }
 
 .section-eyebrow {
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--brass);
