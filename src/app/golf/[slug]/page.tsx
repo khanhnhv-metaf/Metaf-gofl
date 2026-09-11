@@ -2,32 +2,37 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import GolfCourseDetail from "@/components/GolfCourseDetail";
-import { translations } from "@/lib/translations";
+import {
+  getAllGolfCourseSlugs,
+  getGolfCourseBySlug,
+} from "@/lib/data/golf-courses";
 
-const SLUGS = translations.vi.golfList.courses.map((c) => c.slug);
+export const revalidate = 3600;
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export function generateStaticParams() {
-  return SLUGS.map((slug) => ({ slug }));
+export async function generateStaticParams() {
+  const slugs = await getAllGolfCourseSlugs();
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const course = translations.vi.golfList.courses.find((c) => c.slug === slug);
+  const course = await getGolfCourseBySlug(slug);
   if (!course) return {};
   return {
-    title: `${course.name} | Sân golf tại Hà Nội`,
-    description: course.text,
+    title: `${course.name_vi} | Sân golf tại Hà Nội`,
+    description: course.text_vi,
   };
 }
 
 export default async function GolfCourseDetailPage({ params }: PageProps) {
   const { slug } = await params;
+  const course = await getGolfCourseBySlug(slug);
 
-  if (!SLUGS.includes(slug)) {
+  if (!course) {
     notFound();
   }
 
@@ -35,7 +40,7 @@ export default async function GolfCourseDetailPage({ params }: PageProps) {
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
       <main className="flex-1">
-        <GolfCourseDetail slug={slug} />
+        <GolfCourseDetail course={course} />
       </main>
       <SiteFooter />
     </div>

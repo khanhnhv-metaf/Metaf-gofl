@@ -1,6 +1,7 @@
 "use client";
 
 import ContactForm from "./ContactForm";
+import ContactChannelIcon from "./ContactChannelIcon";
 import { useLanguage } from "./LanguageProvider";
 
 export default function ContactSection() {
@@ -23,6 +24,31 @@ export default function ContactSection() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-8">
+            <span className="block text-sm font-semibold text-fairway-2">
+              {c.channelsTitle}
+            </span>
+            <dl className="mt-3 grid gap-3">
+              {c.channels.map((channel) => (
+                <div key={channel.key} className="flex items-center gap-3 text-sm">
+                  <ContactChannelIcon channelKey={channel.key} />
+                  <div>
+                    <dt className="font-medium text-ink">{channel.label}</dt>
+                    <dd
+                      className={
+                        channel.value
+                          ? "text-ink-soft"
+                          : "italic text-ink-soft/70"
+                      }
+                    >
+                      {channel.value ?? c.channelsPlaceholder}
+                    </dd>
+                  </div>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
 
         <ContactForm />

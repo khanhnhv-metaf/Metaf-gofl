@@ -3,10 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "./LanguageProvider";
-import { getGolfCourseImages } from "@/lib/images";
+import { toLangGolfCourse } from "@/lib/data/types";
+import type { GolfCourseRow } from "@/lib/data/types";
 
-export default function GolfCourseList() {
-  const { t } = useLanguage();
+export default function GolfCourseList({ courses }: { courses: GolfCourseRow[] }) {
+  const { t, lang } = useLanguage();
   const g = t.golfList;
 
   return (
@@ -23,78 +24,83 @@ export default function GolfCourseList() {
         <h1 className="mt-2 font-display text-3xl font-semibold text-fairway-2 md:text-4xl">
           {g.title}
         </h1>
-        <p className="mt-3 max-w-2xl text-ink-soft">{g.lead}</p>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft">{g.lead}</p>
 
         <div className="mt-10 grid gap-6">
-          {g.courses.map((course) => (
-            <article
-              key={course.slug}
-              className="grid gap-0 overflow-hidden rounded-2xl border border-line bg-surface md:grid-cols-[1.1fr_1.4fr]"
-            >
-              <Link
-                href={`/golf/${course.slug}`}
-                className="relative block aspect-[3/2] md:aspect-auto"
+          {courses.map((row) => {
+            const course = toLangGolfCourse(row, lang);
+            return (
+              <article
+                key={course.slug}
+                className="grid gap-0 overflow-hidden rounded-2xl border border-line bg-surface md:grid-cols-[1.1fr_1.4fr]"
               >
-                <Image
-                  src={getGolfCourseImages(course.slug)[0]}
-                  alt={course.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                  className="object-cover transition duration-300 hover:scale-105"
-                />
-              </Link>
+                <Link
+                  href={`/golf/${course.slug}`}
+                  className="relative block aspect-[3/2] md:aspect-auto"
+                >
+                  {course.images[0] && (
+                    <Image
+                      src={course.images[0]}
+                      alt={course.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 40vw"
+                      className="object-cover transition duration-300 hover:scale-105"
+                    />
+                  )}
+                </Link>
 
-              <div className="flex flex-col justify-between p-6">
-                <div>
-                  <span className="inline-block rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
-                    {course.highlight}
-                  </span>
-                  <h2 className="mt-3 font-display text-2xl font-semibold text-fairway-2">
-                    <Link href={`/golf/${course.slug}`} className="hover:underline">
-                      {course.name}
-                    </Link>
-                  </h2>
-                  <dl className="mt-3 grid grid-cols-1 gap-1.5 text-sm text-ink-soft sm:grid-cols-2">
-                    <div>
-                      <dt className="font-medium text-ink">{course.location}</dt>
-                    </div>
-                    <div>
-                      <dd>{course.distance}</dd>
-                    </div>
-                    <div>
-                      <dd>{course.holes}</dd>
-                    </div>
-                  </dl>
-                  <p className="mt-3 text-sm text-ink-soft">{course.text}</p>
-                </div>
-
-                <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
+                <div className="flex flex-col justify-between p-6">
                   <div>
-                    <span className="block text-xs uppercase tracking-wide text-ink-soft">
-                      {g.priceLabel}
+                    <span className="inline-block rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
+                      {course.highlight}
                     </span>
-                    <span className="font-display text-lg text-fairway-2">
-                      {g.pricePlaceholder}
-                    </span>
+                    <h2 className="mt-3 font-display text-2xl font-semibold text-fairway-2">
+                      <Link href={`/golf/${course.slug}`} className="hover:underline">
+                        {course.name}
+                      </Link>
+                    </h2>
+                    <dl className="mt-3 grid grid-cols-1 gap-1.5 text-base text-ink-soft sm:grid-cols-2">
+                      <div>
+                        <dt className="font-medium text-ink">{course.location}</dt>
+                      </div>
+                      <div>
+                        <dd>{course.distance}</dd>
+                      </div>
+                      <div>
+                        <dd>{course.holes}</dd>
+                      </div>
+                    </dl>
+                    <p className="mt-3 text-base text-ink-soft">{course.text}</p>
                   </div>
-                  <div className="flex gap-2">
-                    <Link
-                      href={`/golf/${course.slug}`}
-                      className="rounded-full border border-fairway-2 px-5 py-2.5 text-sm font-semibold text-fairway-2 transition hover:bg-fairway-2 hover:text-white"
-                    >
-                      {g.detailCta}
-                    </Link>
-                    <Link
-                      href="/#contact"
-                      className="rounded-full bg-brass px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
-                    >
-                      {g.contactCta}
-                    </Link>
+
+                  <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
+                    <div>
+                      <span className="block text-xs uppercase tracking-wide text-ink-soft">
+                        {g.priceLabel}
+                      </span>
+                      <span className="font-display text-lg text-fairway-2">
+                        {g.pricePlaceholder}
+                      </span>
+                    </div>
+                    <div className="flex gap-2">
+                      <Link
+                        href={`/golf/${course.slug}`}
+                        className="rounded-full border border-fairway-2 px-5 py-2.5 text-sm font-semibold text-fairway-2 transition hover:bg-fairway-2 hover:text-white"
+                      >
+                        {g.detailCta}
+                      </Link>
+                      <Link
+                        href="/#contact"
+                        className="rounded-full bg-brass px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
+                      >
+                        {g.contactCta}
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

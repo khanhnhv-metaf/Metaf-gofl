@@ -3,14 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "./LanguageProvider";
-import { getGolfCourseImages } from "@/lib/images";
+import { toLangGolfCourse } from "@/lib/data/types";
+import type { GolfCourseRow } from "@/lib/data/types";
 
-export default function GolfCourseDetail({ slug }: { slug: string }) {
-  const { t } = useLanguage();
+export default function GolfCourseDetail({ course: row }: { course: GolfCourseRow }) {
+  const { t, lang } = useLanguage();
   const g = t.golfList;
-  const course = g.courses.find((c) => c.slug === slug) ?? g.courses[0];
-  const images = getGolfCourseImages(course.slug);
-  const [cover, ...rest] = images;
+  const course = toLangGolfCourse(row, lang);
+  const [cover, ...rest] = course.images;
 
   return (
     <section className="border-t border-line bg-background py-16">
@@ -33,17 +33,29 @@ export default function GolfCourseDetail({ slug }: { slug: string }) {
         </h1>
         <p className="mt-2 text-ink-soft">{course.location}</p>
 
-        {cover && (
+        {course.videoUrl ? (
           <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
-            <Image
-              src={cover}
-              alt={course.name}
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 900px"
-              className="object-cover"
+            <video
+              src={course.videoUrl}
+              poster={cover}
+              className="h-full w-full object-cover"
+              controls
+              playsInline
             />
           </div>
+        ) : (
+          cover && (
+            <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
+              <Image
+                src={cover}
+                alt={course.name}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 900px"
+                className="object-cover"
+              />
+            </div>
+          )
         )}
 
         <div className="mt-10 grid gap-10 md:grid-cols-[1.4fr_1fr]">
@@ -52,7 +64,7 @@ export default function GolfCourseDetail({ slug }: { slug: string }) {
               {g.infoSectionTitle}
             </h2>
 
-            <ul className="mt-3 grid gap-1.5 text-sm text-ink-soft">
+            <ul className="mt-3 grid gap-1.5 text-base text-ink-soft">
               <li>
                 <span className="font-medium text-ink">{g.locationLabel}: </span>
                 {course.location}
@@ -67,14 +79,14 @@ export default function GolfCourseDetail({ slug }: { slug: string }) {
               </li>
             </ul>
 
-            <p className="mt-4 text-ink-soft">{course.text}</p>
+            <p className="mt-4 text-base text-ink-soft">{course.text}</p>
 
             <h3 className="mt-6 font-display text-lg font-semibold text-fairway-2">
               {g.facilitiesTitle}
             </h3>
             <ul className="mt-2 grid gap-1.5">
               {course.details.map((d) => (
-                <li key={d} className="flex items-start gap-2 text-sm text-ink-soft">
+                <li key={d} className="flex items-start gap-2 text-base text-ink-soft">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-jade" />
                   {d}
                 </li>

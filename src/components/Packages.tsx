@@ -2,14 +2,11 @@
 
 import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
-import bedroom2 from "@/app/asset/bedroom-2.jpg";
-import outside2 from "@/app/asset/outside2.jpg";
-import outside from "@/app/asset/outside.jpg";
+import { toLangPackage } from "@/lib/data/types";
+import type { PackageRow } from "@/lib/data/types";
 
-const PACKAGE_IMAGES = [bedroom2, outside2, outside];
-
-export default function Packages() {
-  const { t } = useLanguage();
+export default function Packages({ items }: { items: PackageRow[] }) {
+  const { t, lang } = useLanguage();
   const p = t.packages;
 
   return (
@@ -19,47 +16,52 @@ export default function Packages() {
         <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
           {p.title}
         </h2>
-        <p className="mt-3 max-w-2xl text-ink-soft">{p.lead}</p>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft">{p.lead}</p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {p.items.map((item, i) => (
-            <article
-              key={item.name}
-              className={`overflow-hidden rounded-2xl border bg-surface ${
-                item.featured
-                  ? "border-brass shadow-lg shadow-brass/10"
-                  : "border-line"
-              }`}
-            >
-              <div className="relative aspect-[3/2]">
-                <Image
-                  src={PACKAGE_IMAGES[i % PACKAGE_IMAGES.length]}
-                  alt={item.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-5">
-                <span className="section-eyebrow">{item.tag}</span>
-                <h3 className="mt-1 font-display text-xl font-semibold text-fairway-2">
-                  {item.name}
-                </h3>
-                <p className="mt-2 text-sm text-ink-soft">{item.text}</p>
-                <ul className="mt-3 grid gap-1.5">
-                  {item.includes.map((inc) => (
-                    <li
-                      key={inc}
-                      className="flex items-start gap-2 text-sm text-ink-soft"
-                    >
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-jade" />
-                      {inc}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </article>
-          ))}
+          {items.map((row) => {
+            const item = toLangPackage(row, lang);
+            return (
+              <article
+                key={item.slug}
+                className={`overflow-hidden rounded-2xl border bg-surface ${
+                  item.featured
+                    ? "border-brass shadow-lg shadow-brass/10"
+                    : "border-line"
+                }`}
+              >
+                <div className="relative aspect-[3/2]">
+                  {item.imageUrl && (
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.name}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  )}
+                </div>
+                <div className="p-5">
+                  <span className="section-eyebrow">{item.tag}</span>
+                  <h3 className="mt-1 font-display text-xl font-semibold text-fairway-2">
+                    {item.name}
+                  </h3>
+                  <p className="mt-2 text-base text-ink-soft">{item.text}</p>
+                  <ul className="mt-3 grid gap-1.5">
+                    {item.includes.map((inc) => (
+                      <li
+                        key={inc}
+                        className="flex items-start gap-2 text-base text-ink-soft"
+                      >
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-jade" />
+                        {inc}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

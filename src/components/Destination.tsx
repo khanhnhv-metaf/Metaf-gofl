@@ -14,10 +14,10 @@ export default function Destination() {
     <section id="destination" className="border-t border-line bg-background py-20">
       <div className="mx-auto max-w-6xl px-6">
         <p className="section-eyebrow">{d.eyebrow}</p>
-        <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
+        <h2 className="mt-2 font-display text-4xl font-semibold text-fairway-2 md:text-5xl">
           {d.title}
         </h2>
-        <p className="mt-3 max-w-2xl text-ink-soft">{d.lead}</p>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft">{d.lead}</p>
 
         <div className="mt-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="grid grid-cols-2 gap-3">
@@ -57,10 +57,10 @@ export default function Destination() {
                   key={f.label}
                   className="rounded-xl border border-line bg-surface p-4"
                 >
-                  <span className="block font-semibold text-fairway-2">
+                  <span className="block text-lg font-semibold text-fairway-2">
                     {f.label}
                   </span>
-                  <span className="text-sm text-ink-soft">{f.text}</span>
+                  <span className="text-base text-ink-soft">{f.text}</span>
                 </li>
               ))}
             </ul>
