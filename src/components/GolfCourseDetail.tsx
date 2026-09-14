@@ -17,13 +17,13 @@ export default function GolfCourseDetail({ course: row }: { course: GolfCourseRo
       <div className="mx-auto max-w-5xl px-6">
         <Link
           href="/golf"
-          className="text-sm font-medium text-ink-soft hover:text-fairway-2"
+          className="text-lg font-medium text-ink-soft hover:text-fairway-2"
         >
           {g.backList}
         </Link>
 
         <div className="mt-4 flex flex-wrap items-center gap-3">
-          <span className="inline-block rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
+          <span className="inline-block rounded-full bg-jade/15 px-3 py-1 text-lg font-semibold text-jade">
             {course.highlight}
           </span>
         </div>
@@ -31,7 +31,7 @@ export default function GolfCourseDetail({ course: row }: { course: GolfCourseRo
         <h1 className="mt-3 font-display text-3xl font-semibold text-fairway-2 md:text-4xl">
           {course.name}
         </h1>
-        <p className="mt-2 text-ink-soft">{course.location}</p>
+        <p className="mt-2 text-lg text-ink-soft">{course.location}</p>
 
         {course.videoUrl ? (
           <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
@@ -64,7 +64,7 @@ export default function GolfCourseDetail({ course: row }: { course: GolfCourseRo
               {g.infoSectionTitle}
             </h2>
 
-            <ul className="mt-3 grid gap-1.5 text-base text-ink-soft">
+            <ul className="mt-3 grid gap-1.5 text-lg text-ink-soft">
               <li>
                 <span className="font-medium text-ink">{g.locationLabel}: </span>
                 {course.location}
@@ -79,14 +79,14 @@ export default function GolfCourseDetail({ course: row }: { course: GolfCourseRo
               </li>
             </ul>
 
-            <p className="mt-4 text-base text-ink-soft">{course.text}</p>
+            <p className="mt-4 text-lg text-ink-soft">{course.text}</p>
 
             <h3 className="mt-6 font-display text-lg font-semibold text-fairway-2">
               {g.facilitiesTitle}
             </h3>
             <ul className="mt-2 grid gap-1.5">
               {course.details.map((d) => (
-                <li key={d} className="flex items-start gap-2 text-base text-ink-soft">
+                <li key={d} className="flex items-start gap-2 text-lg text-ink-soft">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-jade" />
                   {d}
                 </li>
@@ -96,7 +96,7 @@ export default function GolfCourseDetail({ course: row }: { course: GolfCourseRo
 
           <Link
             href="/#contact"
-            className="block h-fit rounded-full bg-brass px-5 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90"
+            className="block h-fit rounded-full bg-brass px-5 py-3 text-center text-lg font-semibold text-white transition hover:opacity-90"
           >
             {g.contactCta}
           </Link>

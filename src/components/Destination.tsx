@@ -57,10 +57,10 @@ export default function Destination() {
                   key={f.label}
                   className="rounded-xl border border-line bg-surface p-4"
                 >
-                  <span className="block text-lg font-semibold text-fairway-2">
+                  <span className="block text-xl font-semibold text-fairway-2 md:text-2xl">
                     {f.label}
                   </span>
-                  <span className="text-base text-ink-soft">{f.text}</span>
+                  <span className="text-lg text-ink-soft md:text-xl">{f.text}</span>
                 </li>
               ))}
             </ul>

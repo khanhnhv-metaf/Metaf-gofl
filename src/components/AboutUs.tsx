@@ -34,10 +34,10 @@ export default function AboutUs() {
                 key={v.label}
                 className="rounded-xl border border-line bg-surface p-4"
               >
-                <span className="block text-lg font-semibold text-fairway-2">
+                <span className="block text-xl font-semibold text-fairway-2 md:text-2xl">
                   {v.label}
                 </span>
-                <span className="text-base text-ink-soft">{v.text}</span>
+                <span className="text-lg text-ink-soft md:text-xl">{v.text}</span>
               </li>
             ))}
           </ul>

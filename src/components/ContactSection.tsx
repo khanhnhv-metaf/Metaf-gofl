@@ -16,8 +16,8 @@ export default function ContactSection() {
           <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
             {c.title}
           </h2>
-          <p className="mt-3 max-w-md text-ink-soft">{c.lead}</p>
-          <ul className="mt-5 grid gap-2 text-sm text-ink-soft">
+          <p className="mt-3 max-w-md text-lg text-ink-soft">{c.lead}</p>
+          <ul className="mt-5 grid gap-2 text-base text-ink-soft">
             {c.points.map((point) => (
               <li key={point} className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-jade" /> {point}
@@ -26,12 +26,12 @@ export default function ContactSection() {
           </ul>
 
           <div className="mt-8">
-            <span className="block text-sm font-semibold text-fairway-2">
+            <span className="block text-base font-semibold text-fairway-2">
               {c.channelsTitle}
             </span>
             <dl className="mt-3 grid gap-3">
               {c.channels.map((channel) => (
-                <div key={channel.key} className="flex items-center gap-3 text-sm">
+                <div key={channel.key} className="flex items-center gap-3 text-base">
                   <ContactChannelIcon channelKey={channel.key} />
                   <div>
                     <dt className="font-medium text-ink">{channel.label}</dt>

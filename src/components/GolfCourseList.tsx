@@ -15,7 +15,7 @@ export default function GolfCourseList({ courses }: { courses: GolfCourseRow[] }
       <div className="mx-auto max-w-5xl px-6">
         <Link
           href="/"
-          className="text-sm font-medium text-ink-soft hover:text-fairway-2"
+          className="text-lg font-medium text-ink-soft hover:text-fairway-2"
         >
           {g.backHome}
         </Link>
@@ -51,7 +51,7 @@ export default function GolfCourseList({ courses }: { courses: GolfCourseRow[] }
 
                 <div className="flex flex-col justify-between p-6">
                   <div>
-                    <span className="inline-block rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
+                    <span className="inline-block rounded-full bg-jade/15 px-3 py-1 text-lg font-semibold text-jade">
                       {course.highlight}
                     </span>
                     <h2 className="mt-3 font-display text-2xl font-semibold text-fairway-2">
@@ -59,7 +59,7 @@ export default function GolfCourseList({ courses }: { courses: GolfCourseRow[] }
                         {course.name}
                       </Link>
                     </h2>
-                    <dl className="mt-3 grid grid-cols-1 gap-1.5 text-base text-ink-soft sm:grid-cols-2">
+                    <dl className="mt-3 grid grid-cols-1 gap-1.5 text-lg text-ink-soft sm:grid-cols-2">
                       <div>
                         <dt className="font-medium text-ink">{course.location}</dt>
                       </div>
@@ -70,28 +70,28 @@ export default function GolfCourseList({ courses }: { courses: GolfCourseRow[] }
                         <dd>{course.holes}</dd>
                       </div>
                     </dl>
-                    <p className="mt-3 text-base text-ink-soft">{course.text}</p>
+                    <p className="mt-3 text-lg text-ink-soft">{course.text}</p>
                   </div>
 
                   <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-4">
                     <div>
-                      <span className="block text-xs uppercase tracking-wide text-ink-soft">
+                      <span className="block text-lg uppercase tracking-wide text-ink-soft">
                         {g.priceLabel}
                       </span>
-                      <span className="font-display text-lg text-fairway-2">
+                      <span className="font-display text-xl text-fairway-2">
                         {g.pricePlaceholder}
                       </span>
                     </div>
                     <div className="flex gap-2">
                       <Link
                         href={`/golf/${course.slug}`}
-                        className="rounded-full border border-fairway-2 px-5 py-2.5 text-sm font-semibold text-fairway-2 transition hover:bg-fairway-2 hover:text-white"
+                        className="rounded-full border border-fairway-2 px-5 py-2.5 text-lg font-semibold text-fairway-2 transition hover:bg-fairway-2 hover:text-white"
                       >
                         {g.detailCta}
                       </Link>
                       <Link
                         href="/#contact"
-                        className="rounded-full bg-brass px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
+                        className="rounded-full bg-brass px-5 py-2.5 text-lg font-semibold text-white transition hover:opacity-90"
                       >
                         {g.contactCta}
                       </Link>

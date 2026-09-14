@@ -31,7 +31,7 @@ export default function SiteHeader() {
        
         </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-medium text-white/85 md:flex">
+        <nav className="hidden items-center gap-7 text-lg font-medium text-white md:flex">
           {NAV_ITEMS.map((item) => (
             <Link key={item.href} href={item.href} className="hover:text-white">
               {item.label}
@@ -63,7 +63,7 @@ export default function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-white/15 bg-header px-6 py-4 text-sm font-medium text-white/85 md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-white/15 bg-header px-6 py-4 text-lg font-medium text-white md:hidden">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
@@ -98,14 +98,14 @@ function LanguageToggle({
     <div
       role="group"
       aria-label="Chọn ngôn ngữ / 언어 선택"
-      className="flex rounded-full border border-white/25 bg-white/10 p-0.5 text-xs font-semibold"
+      className="flex rounded-full border border-white/25 bg-white/10 p-0.5 text-lg font-semibold"
     >
       <button
         type="button"
         onClick={() => setLang("vi")}
         aria-pressed={lang === "vi"}
         className={`rounded-full px-3 py-1.5 transition ${
-          lang === "vi" ? "bg-white text-header" : "text-white/70 hover:text-white"
+          lang === "vi" ? "bg-white text-header" : "text-white hover:text-white"
         }`}
       >
         VI
@@ -115,7 +115,7 @@ function LanguageToggle({
         onClick={() => setLang("kr")}
         aria-pressed={lang === "kr"}
         className={`rounded-full px-3 py-1.5 transition ${
-          lang === "kr" ? "bg-white text-header" : "text-white/70 hover:text-white"
+          lang === "kr" ? "bg-white text-header" : "text-white hover:text-white"
         }`}
       >
         KR

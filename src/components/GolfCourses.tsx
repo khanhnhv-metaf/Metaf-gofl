@@ -20,7 +20,7 @@ export default function GolfCourses({ courses }: { courses: GolfCourseRow[] }) {
         <p className="mt-3 max-w-2xl text-lg text-ink-soft">{g.lead}</p>
         <Link
           href="/golf"
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brass hover:opacity-80"
+          className="mt-4 inline-flex items-center gap-1.5 text-lg font-semibold text-brass hover:opacity-80"
         >
           {g.viewAllCta}
           <span aria-hidden>→</span>
@@ -44,7 +44,7 @@ export default function GolfCourses({ courses }: { courses: GolfCourseRow[] }) {
                       className="object-cover transition duration-300 hover:scale-105"
                     />
                   )}
-                  <span className="absolute right-3 top-3 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white">
+                  <span className="absolute right-3 top-3 rounded-full bg-black/60 px-3 py-1 text-lg font-medium text-white">
                     {c.distanceFromHomestay ?? c.distance}
                   </span>
                 </Link>
@@ -54,8 +54,8 @@ export default function GolfCourses({ courses }: { courses: GolfCourseRow[] }) {
                       {c.name}
                     </Link>
                   </h3>
-                  <p className="mt-2 text-base text-ink-soft">{c.text}</p>
-                  <span className="mt-3 inline-block rounded-full bg-jade/15 px-3 py-1 text-xs font-semibold text-jade">
+                  <p className="mt-2 text-lg text-ink-soft">{c.text}</p>
+                  <span className="mt-3 inline-block rounded-full bg-jade/15 px-3 py-1 text-lg font-semibold text-jade">
                     {c.highlight}
                   </span>
                 </div>

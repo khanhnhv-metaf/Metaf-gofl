@@ -46,12 +46,12 @@ export default function Packages({ items }: { items: PackageRow[] }) {
                   <h3 className="mt-1 font-display text-xl font-semibold text-fairway-2">
                     {item.name}
                   </h3>
-                  <p className="mt-2 text-base text-ink-soft">{item.text}</p>
+                  <p className="mt-2 text-lg text-ink-soft">{item.text}</p>
                   <ul className="mt-3 grid gap-1.5">
                     {item.includes.map((inc) => (
                       <li
                         key={inc}
-                        className="flex items-start gap-2 text-base text-ink-soft"
+                        className="flex items-start gap-2 text-lg text-ink-soft"
                       >
                         <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-jade" />
                         {inc}

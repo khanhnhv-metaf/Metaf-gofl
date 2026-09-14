@@ -42,7 +42,7 @@ export default function ContactForm() {
       className="grid gap-4 rounded-2xl border border-line bg-surface p-6"
     >
       <div className="grid gap-1.5">
-        <label htmlFor="name" className="text-sm font-medium">
+        <label htmlFor="name" className="text-lg font-medium">
           {f.name}
         </label>
         <input
@@ -51,12 +51,12 @@ export default function ContactForm() {
           type="text"
           required
           placeholder={f.namePlaceholder}
-          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+          className="rounded-lg border border-line bg-background px-3 py-2 text-lg outline-none focus:border-fairway-2"
         />
       </div>
 
       <div className="grid gap-1.5">
-        <label htmlFor="contactInfo" className="text-sm font-medium">
+        <label htmlFor="contactInfo" className="text-lg font-medium">
           {f.contactInfo}
         </label>
         <input
@@ -65,18 +65,18 @@ export default function ContactForm() {
           type="text"
           required
           placeholder={f.contactInfoPlaceholder}
-          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+          className="rounded-lg border border-line bg-background px-3 py-2 text-lg outline-none focus:border-fairway-2"
         />
       </div>
 
       <div className="grid gap-1.5">
-        <label htmlFor="package" className="text-sm font-medium">
+        <label htmlFor="package" className="text-lg font-medium">
           {f.packageLabel}
         </label>
         <select
           id="package"
           name="package"
-          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+          className="rounded-lg border border-line bg-background px-3 py-2 text-lg outline-none focus:border-fairway-2"
         >
           {f.packageOptions.map((opt) => (
             <option key={opt.value} value={opt.value}>
@@ -87,19 +87,19 @@ export default function ContactForm() {
       </div>
 
       <div className="grid gap-1.5">
-        <label htmlFor="date" className="text-sm font-medium">
+        <label htmlFor="date" className="text-lg font-medium">
           {f.date}
         </label>
         <input
           id="date"
           name="date"
           type="date"
-          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+          className="rounded-lg border border-line bg-background px-3 py-2 text-lg outline-none focus:border-fairway-2"
         />
       </div>
 
       <div className="grid gap-1.5">
-        <label htmlFor="guests" className="text-sm font-medium">
+        <label htmlFor="guests" className="text-lg font-medium">
           {f.guests}
         </label>
         <input
@@ -108,12 +108,12 @@ export default function ContactForm() {
           type="number"
           min={1}
           defaultValue={2}
-          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+          className="rounded-lg border border-line bg-background px-3 py-2 text-lg outline-none focus:border-fairway-2"
         />
       </div>
 
       <div className="grid gap-1.5">
-        <label htmlFor="note" className="text-sm font-medium">
+        <label htmlFor="note" className="text-lg font-medium">
           {f.note}
         </label>
         <textarea
@@ -121,23 +121,23 @@ export default function ContactForm() {
           name="note"
           rows={3}
           placeholder={f.notePlaceholder}
-          className="rounded-lg border border-line bg-background px-3 py-2 outline-none focus:border-fairway-2"
+          className="rounded-lg border border-line bg-background px-3 py-2 text-lg outline-none focus:border-fairway-2"
         />
       </div>
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="rounded-full bg-brass px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:opacity-60"
+        className="rounded-full bg-brass px-6 py-3 text-lg font-semibold text-white transition hover:opacity-90 disabled:opacity-60"
       >
         {status === "submitting" ? f.submitting : f.submit}
       </button>
 
       {status === "success" && (
-        <p className="text-sm font-medium text-fairway-2">{f.success}</p>
+        <p className="text-lg font-medium text-fairway-2">{f.success}</p>
       )}
       {status === "error" && (
-        <p className="text-sm font-medium text-red-600">{f.error}</p>
+        <p className="text-lg font-medium text-red-600">{f.error}</p>
       )}
     </form>
   );

@@ -24,7 +24,7 @@ export default function Faq() {
               <summary className="cursor-pointer list-none text-xl font-semibold text-fairway-2 marker:content-none">
                 {item.q}
               </summary>
-              <p className="mt-3 text-lg text-ink-soft">{item.a}</p>
+              <p className="mt-3 text-lg text-ink-soft md:text-xl">{item.a}</p>
             </details>
           ))}
         </div>
