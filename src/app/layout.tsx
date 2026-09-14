@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR } from "next/font/google";
+import { Roboto, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageProvider";
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  weight: ["400", "500", "700"],
+  subsets: ["latin", "vietnamese"],
+});
 
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-kr",
@@ -23,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${notoSansKr.variable} h-full antialiased`}
+      className={`${roboto.variable} ${notoSansKr.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <LanguageProvider>{children}</LanguageProvider>

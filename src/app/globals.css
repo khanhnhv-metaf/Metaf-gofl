@@ -50,8 +50,8 @@
   --color-jade: var(--jade);
   --color-header: var(--header);
   --color-header-soft: var(--header-soft);
-  --font-display: Arial, Helvetica, sans-serif;
-  --font-body: Arial, Helvetica, sans-serif;
+  --font-display: var(--font-roboto);
+  --font-body: var(--font-roboto);
 }
 
 * {
