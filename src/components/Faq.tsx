@@ -9,8 +9,8 @@ export default function Faq() {
   return (
     <section id="faq" className="border-t border-line bg-background py-20">
       <div className="mx-auto max-w-3xl px-6">
-        <p className="section-eyebrow">{f.eyebrow}</p>
-        <h2 className="mt-2 font-display text-4xl font-semibold text-fairway-2 md:text-5xl">
+        <p className="section-eyebrow-lg">{f.eyebrow}</p>
+        <h2 className="mt-2 font-display text-xl font-semibold text-fairway-2 md:text-2xl">
           {f.title}
         </h2>
 

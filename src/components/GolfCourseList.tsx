@@ -20,11 +20,11 @@ export default function GolfCourseList({ courses }: { courses: GolfCourseRow[] }
           {g.backHome}
         </Link>
 
-        <p className="section-eyebrow mt-4">{g.eyebrow}</p>
+        <p className="section-eyebrow-lg mt-4">{g.eyebrow}</p>
         <h1 className="mt-2 font-display text-3xl font-semibold text-fairway-2 md:text-4xl">
           {g.title}
         </h1>
-        <p className="mt-3 max-w-2xl text-lg text-ink-soft">{g.lead}</p>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft md:text-xl">{g.lead}</p>
 
         <div className="mt-10 grid gap-6">
           {courses.map((row) => {

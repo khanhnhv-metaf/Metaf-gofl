@@ -12,11 +12,11 @@ export default function Packages({ items }: { items: PackageRow[] }) {
   return (
     <section id="packages" className="border-t border-line bg-background py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="section-eyebrow">{p.eyebrow}</p>
-        <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
+        <p className="section-eyebrow-lg">{p.eyebrow}</p>
+        <h2 className="mt-2 font-display text-xl font-semibold text-fairway-2 md:text-2xl">
           {p.title}
         </h2>
-        <p className="mt-3 max-w-2xl text-lg text-ink-soft">{p.lead}</p>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft md:text-xl">{p.lead}</p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {items.map((row) => {

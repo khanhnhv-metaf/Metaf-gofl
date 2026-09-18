@@ -19,19 +19,19 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-header">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-3">
+      <div className="flex items-center justify-between gap-4 px-8 py-3 sm:px-16 md:px-24">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.jpg"
             alt="Zen Homestay Lâm Trường"
             width={40}
             height={40}
-            className="h-15 w-16 rounded-full"
+            className="h-17 w-18 rounded-full"
           />
        
         </Link>
 
-        <nav className="hidden items-center gap-7 text-lg font-medium text-white md:flex">
+        <nav className="hidden items-center gap-7 text-xl font-medium text-white md:flex">
           {NAV_ITEMS.map((item) => (
             <Link key={item.href} href={item.href} className="hover:text-white">
               {item.label}

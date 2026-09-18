@@ -13,11 +13,11 @@ export default function GolfCourses({ courses }: { courses: GolfCourseRow[] }) {
   return (
     <section id="golf" className="border-t border-line bg-surface py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="section-eyebrow">{g.eyebrow}</p>
-        <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
+        <p className="section-eyebrow-lg">{g.eyebrow}</p>
+        <h2 className="mt-2 font-display text-xl font-semibold text-fairway-2 md:text-2xl">
           {g.title}
         </h2>
-        <p className="mt-3 max-w-2xl text-lg text-ink-soft">{g.lead}</p>
+        <p className="mt-3 max-w-2xl text-lg text-ink-soft md:text-xl">{g.lead}</p>
         <Link
           href="/golf"
           className="mt-4 inline-flex items-center gap-1.5 text-lg font-semibold text-brass hover:opacity-80"

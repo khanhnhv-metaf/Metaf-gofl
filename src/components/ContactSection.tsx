@@ -12,11 +12,11 @@ export default function ContactSection() {
     <section id="contact" className="border-t border-line bg-surface py-20">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-2">
         <div>
-          <p className="section-eyebrow">{c.eyebrow}</p>
-          <h2 className="mt-2 font-display text-3xl font-semibold text-fairway-2">
+          <p className="section-eyebrow-lg">{c.eyebrow}</p>
+          <h2 className="mt-2 font-display text-xl font-semibold text-fairway-2 md:text-2xl">
             {c.title}
           </h2>
-          <p className="mt-3 max-w-md text-lg text-ink-soft">{c.lead}</p>
+          <p className="mt-3 max-w-md text-lg text-ink-soft md:text-xl">{c.lead}</p>
           <ul className="mt-5 grid gap-2 text-base text-ink-soft">
             {c.points.map((point) => (
               <li key={point} className="flex items-center gap-2">

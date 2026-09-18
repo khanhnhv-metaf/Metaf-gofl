@@ -82,6 +82,20 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+.section-eyebrow-lg {
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .section-eyebrow-lg {
+    font-size: 1.875rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

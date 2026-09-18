@@ -20,7 +20,7 @@ export const translations = {
       ctaGhost: "Xem bản đồ sân golf",
     },
     about: {
-      eyebrow: "01 · Về chúng tôi",
+      eyebrow: "Về chúng tôi",
       title:
         "Zen Homestay Lâm Trường — Chạm đến sự cân bằng giữa golf và thiên nhiên",
       lead: "Lấy cảm hứng từ vẻ đẹp nguyên bản của Sóc Sơn, Zen Homestay Lâm Trường mang đến không gian nghỉ dưỡng thanh bình, nơi mỗi kỳ nghỉ không chỉ là hành trình chơi golf mà còn là cơ hội để thư giãn, kết nối với thiên nhiên và tận hưởng những trải nghiệm trọn vẹn.",
@@ -41,7 +41,7 @@ export const translations = {
       imageAlt: "Không gian nghỉ dưỡng của Zen Homestay Lâm Trường tại Sóc Sơn",
     },
     destination: {
-      eyebrow: "02 · Điểm đến",
+      eyebrow: "Điểm đến",
       title: "Zen Homestay Lâm Trường",
       lead: "Ẩn mình trong vùng lâm trường xanh mát (greenbelt) tại Sóc Sơn, ngay cạnh Cảng hàng không quốc tế Nội Bài — chỉ khoảng 15–30 phút di chuyển đến sân bay và trung tâm Hà Nội — nơi lý tưởng để nghỉ ngơi trước và sau mỗi vòng golf.",
       features: [
@@ -64,7 +64,7 @@ export const translations = {
       ],
     },
     golf: {
-      eyebrow: "03 · Sân golf Hà Nội",
+      eyebrow: "Sân golf Hà Nội",
       title: "3 sân golf tiêu biểu tại Hà Nội",
       lead: "Tất cả đều nằm trong bán kính di chuyển hợp lý từ homestay, thuộc khu vực Sóc Sơn – Sơn Tây – Thạch Thất, phía Bắc Hà Nội.",
       viewAllCta: "Xem toàn bộ sân golf tại Hà Nội",
@@ -87,12 +87,12 @@ export const translations = {
       holesLabel: "Số hố",
     },
     packages: {
-      eyebrow: "04 · Gói dịch vụ",
+      eyebrow: "Gói dịch vụ",
       title: "Gói nghỉ dưỡng & golf trọn gói",
       lead: "Linh hoạt kết hợp nghỉ dưỡng, chơi golf và ăn uống theo nhu cầu của bạn.",
     },
     faq: {
-      eyebrow: "05 · Hỏi đáp",
+      eyebrow: "Hỏi đáp",
       title: "Câu hỏi thường gặp",
       items: [
         {
@@ -114,7 +114,7 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "06 · Liên hệ",
+      eyebrow: "Liên hệ",
       title: "Để lại thông tin, chúng tôi sẽ liên hệ tư vấn",
       lead: "Không cần thanh toán ngay. Đội ngũ Sales/CSKH sẽ liên hệ trong vòng 24 giờ để tư vấn chi tiết và báo giá phù hợp với nhu cầu của bạn.",
       points: ["Tư vấn miễn phí", "Phản hồi trong vòng 24 giờ"],
@@ -193,7 +193,7 @@ export const translations = {
       ctaGhost: "골프장 지도 보기",
     },
     about: {
-      eyebrow: "01 · 회사 소개",
+      eyebrow: "회사 소개",
       title: "젠 홈스테이 — 골프와 자연이 만나는 균형점",
       lead: "SOC SON 의 자연 그대로의 아름다움에서 영감을 받은 젠 홈스테이 은 평온한 휴식 공간을 선사합니다. 이곳에서의 매 여행은 골프 라운딩을 넘어, 휴식하고 자연과 교감하며 완전한 경험을 만끽하는 시간이 됩니다.",
       values: [
@@ -213,7 +213,7 @@ export const translations = {
       imageAlt: "쏙선에 위치한 젠 홈스테이의 휴식 공간",
     },
     destination: {
-      eyebrow: "02 · 숙소 소개",
+      eyebrow: "숙소 소개",
       title: "젠 홈스테이",
       lead: "SOC SON 의 푸른 그린벨트 지역, 노이바이 국제공항 바로 옆에 자리해 공항과 하노이 시내까지 약 15~30분 거리입니다. 골프 라운딩 전후 휴식을 취하기에 이상적인 공간입니다.",
       features: [
@@ -236,7 +236,7 @@ export const translations = {
       ],
     },
     golf: {
-      eyebrow: "03 · 하노이 골프장",
+      eyebrow: "하노이 골프장",
       title: "하노이 3대 골프장",
       lead: "모두 숙소에서 무리 없이 이동 가능한 거리에 있으며, 하노이 북쪽 쏙선 – 선떠이 – 탁텃 지역에 위치합니다.",
       viewAllCta: "하노이 전체 골프장 보기",
@@ -259,12 +259,12 @@ export const translations = {
       holesLabel: "홀 수",
     },
     packages: {
-      eyebrow: "04 · 패키지",
+      eyebrow: "패키지",
       title: "휴식 & 골프 올인클루시브 패키지",
       lead: "숙박, 골프, 식사를 원하는 대로 자유롭게 조합할 수 있습니다.",
     },
     faq: {
-      eyebrow: "05 · 자주 묻는 질문",
+      eyebrow: "자주 묻는 질문",
       title: "자주 묻는 질문",
       items: [
         {
@@ -286,7 +286,7 @@ export const translations = {
       ],
     },
     contact: {
-      eyebrow: "06 · 문의",
+      eyebrow: "문의",
       title: "정보를 남겨주시면 상담해 드립니다",
       lead: "지금 바로 결제하실 필요는 없습니다. 상담팀이 24시간 이내에 연락드려 필요에 맞는 상세 견적을 안내해 드립니다.",
       points: ["무료 상담", "24시간 이내 회신"],
