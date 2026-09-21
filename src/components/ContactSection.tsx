@@ -4,6 +4,22 @@ import ContactForm from "./ContactForm";
 import ContactChannelIcon from "./ContactChannelIcon";
 import { useLanguage } from "./LanguageProvider";
 
+function getChannelHref(key: string, value: string | null): string | null {
+  if (!value) return null;
+  switch (key) {
+    case "email":
+      return `mailto:${value}`;
+    case "phone":
+      return `tel:${value.split("/")[0].replace(/[^\d+]/g, "")}`;
+    case "zalo":
+      return `https://zalo.me/${value.replace(/^0/, "84")}`;
+    case "telegram":
+      return `https://t.me/${value.replace(/^@/, "")}`;
+    default:
+      return null;
+  }
+}
+
 export default function ContactSection() {
   const { t } = useLanguage();
   const c = t.contact;
@@ -30,23 +46,41 @@ export default function ContactSection() {
               {c.channelsTitle}
             </span>
             <dl className="mt-3 grid gap-3">
-              {c.channels.map((channel) => (
-                <div key={channel.key} className="flex items-center gap-3 text-base">
-                  <ContactChannelIcon channelKey={channel.key} />
-                  <div>
-                    <dt className="font-medium text-ink">{channel.label}</dt>
-                    <dd
-                      className={
-                        channel.value
-                          ? "text-ink-soft"
-                          : "italic text-ink-soft/70"
-                      }
-                    >
-                      {channel.value ?? c.channelsPlaceholder}
-                    </dd>
-                  </div>
-                </div>
-              ))}
+              {c.channels.map((channel) => {
+                const href = getChannelHref(channel.key, channel.value);
+                const Wrapper = href ? "a" : "div";
+                return (
+                  <Wrapper
+                    key={channel.key}
+                    {...(href
+                      ? {
+                          href,
+                          target: href.startsWith("http") ? "_blank" : undefined,
+                          rel: href.startsWith("http")
+                            ? "noopener noreferrer"
+                            : undefined,
+                        }
+                      : {})}
+                    className={`flex items-center gap-3 rounded-lg text-base ${
+                      href ? "-m-1.5 p-1.5 transition hover:bg-background" : ""
+                    }`}
+                  >
+                    <ContactChannelIcon channelKey={channel.key} />
+                    <div>
+                      <dt className="font-medium text-ink">{channel.label}</dt>
+                      <dd
+                        className={
+                          channel.value
+                            ? "text-ink-soft"
+                            : "italic text-ink-soft/70"
+                        }
+                      >
+                        {channel.value ?? c.channelsPlaceholder}
+                      </dd>
+                    </div>
+                  </Wrapper>
+                );
+              })}
             </dl>
           </div>
         </div>

@@ -32,11 +32,10 @@ const ICONS: Record<ChannelKey, React.ReactNode> = {
     </Badge>
   ),
   zalo: (
-    <Badge className="bg-[#0068FF]">
-      <svg viewBox="0 0 24 24" className="h-5 w-5" fill="#fff" aria-hidden="true">
-        <path d="M12 3C6.9 3 2.8 6.6 2.8 11c0 2.4 1.2 4.5 3.1 6l-.8 3.4a.6.6 0 0 0 .9.7l3.8-2.1c.7.1 1.4.2 2.2.2 5.1 0 9.2-3.6 9.2-8S17.1 3 12 3Z" />
-      </svg>
-    </Badge>
+    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/zalo-logo.svg" alt="Zalo" className="h-full w-full" />
+    </span>
   ),
   facebook: (
     <Badge className="bg-[#1877F2]">

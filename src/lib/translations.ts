@@ -124,28 +124,32 @@ export const translations = {
         {
           key: "kakaotalk" as const,
           label: "KakaoTalk",
-          value: null as string | null,
+          value: "zenhomestay" as string | null,
         },
         {
           key: "telegram" as const,
           label: "Telegram",
-          value: null as string | null,
+          value: "@zenhomestay" as string | null,
         },
-        { key: "zalo" as const, label: "Zalo", value: null as string | null },
+        {
+          key: "zalo" as const,
+          label: "Zalo",
+          value: "0825261234" as string | null,
+        },
         {
           key: "facebook" as const,
           label: "Facebook",
-          value: null as string | null,
+          value: "Đang chuẩn bị" as string | null,
         },
         {
           key: "email" as const,
           label: "E-mail",
-          value: null as string | null,
+          value: "zenhomestayss@gmail.com" as string | null,
         },
         {
           key: "phone" as const,
           label: "Số điện thoại",
-          value: null as string | null,
+          value: "+82 010 4393 1968 / 08 2526 1234" as string | null,
         },
       ],
       form: {
@@ -296,28 +300,32 @@ export const translations = {
         {
           key: "kakaotalk" as const,
           label: "카카오톡",
-          value: null as string | null,
+          value: "zenhomestay" as string | null,
         },
         {
           key: "telegram" as const,
           label: "텔레그램",
-          value: null as string | null,
+          value: "@zenhomestay" as string | null,
         },
-        { key: "zalo" as const, label: "Zalo", value: null as string | null },
+        {
+          key: "zalo" as const,
+          label: "Zalo",
+          value: "0825261234" as string | null,
+        },
         {
           key: "facebook" as const,
           label: "페이스북",
-          value: null as string | null,
+          value: "준비 중" as string | null,
         },
         {
           key: "email" as const,
           label: "E-mail",
-          value: null as string | null,
+          value: "zenhomestayss@gmail.com" as string | null,
         },
         {
           key: "phone" as const,
           label: "휴대폰",
-          value: null as string | null,
+          value: "+82 010 4393 1968 / 08 2526 1234" as string | null,
         },
       ],
       form: {
