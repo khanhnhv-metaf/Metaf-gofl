@@ -139,7 +139,7 @@ export const translations = {
         {
           key: "facebook" as const,
           label: "Facebook",
-          value: "Đang chuẩn bị" as string | null,
+          value: "Zen Homestay Lâm Trường" as string | null,
         },
         {
           key: "email" as const,
@@ -315,7 +315,7 @@ export const translations = {
         {
           key: "facebook" as const,
           label: "페이스북",
-          value: "준비 중" as string | null,
+          value: "Zen Homestay Lâm Trường" as string | null,
         },
         {
           key: "email" as const,

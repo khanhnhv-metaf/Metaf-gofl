@@ -4,6 +4,8 @@ import ContactForm from "./ContactForm";
 import ContactChannelIcon from "./ContactChannelIcon";
 import { useLanguage } from "./LanguageProvider";
 
+const FACEBOOK_URL = "https://www.facebook.com/share/1BwP6tDXbg/";
+
 function getChannelHref(key: string, value: string | null): string | null {
   if (!value) return null;
   switch (key) {
@@ -15,6 +17,8 @@ function getChannelHref(key: string, value: string | null): string | null {
       return `https://zalo.me/${value.replace(/^0/, "84")}`;
     case "telegram":
       return `https://t.me/${value.replace(/^@/, "")}`;
+    case "facebook":
+      return FACEBOOK_URL;
     default:
       return null;
   }
