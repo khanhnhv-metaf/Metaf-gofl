@@ -149,7 +149,7 @@ export const translations = {
         {
           key: "phone" as const,
           label: "Số điện thoại",
-          value: "+82 010 4393 1968 / 08 2526 1234" as string | null,
+          value: "KR: +82 10 4393 1968\nVN: 08 2526 1234" as string | null,
         },
       ],
       form: {
@@ -325,7 +325,7 @@ export const translations = {
         {
           key: "phone" as const,
           label: "휴대폰",
-          value: "+82 010 4393 1968 / 08 2526 1234" as string | null,
+          value: "KR: +82 10 4393 1968\nVN: 08 2526 1234" as string | null,
         },
       ],
       form: {

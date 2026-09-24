@@ -11,8 +11,6 @@ function getChannelHref(key: string, value: string | null): string | null {
   switch (key) {
     case "email":
       return `mailto:${value}`;
-    case "phone":
-      return `tel:${value.split("/")[0].replace(/[^\d+]/g, "")}`;
     case "zalo":
       return `https://zalo.me/${value.replace(/^0/, "84")}`;
     case "telegram":
@@ -51,6 +49,37 @@ export default function ContactSection() {
             </span>
             <dl className="mt-3 grid gap-3">
               {c.channels.map((channel) => {
+                if (channel.key === "phone" && channel.value) {
+                  const lines = channel.value.split("\n");
+                  return (
+                    <div
+                      key={channel.key}
+                      className="flex items-start gap-3 text-base"
+                    >
+                      <ContactChannelIcon channelKey={channel.key} />
+                      <div>
+                        <dt className="font-medium text-ink">{channel.label}</dt>
+                        <dd className="text-ink-soft">
+                          {lines.map((line) => {
+                            const tel = line
+                              .replace(/^[^:]*:\s*/, "")
+                              .replace(/[^\d+]/g, "");
+                            return (
+                              <a
+                                key={line}
+                                href={`tel:${tel}`}
+                                className="block hover:text-fairway-2 hover:underline"
+                              >
+                                {line}
+                              </a>
+                            );
+                          })}
+                        </dd>
+                      </div>
+                    </div>
+                  );
+                }
+
                 const href = getChannelHref(channel.key, channel.value);
                 const Wrapper = href ? "a" : "div";
                 return (
